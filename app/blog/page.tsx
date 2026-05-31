@@ -28,8 +28,8 @@ export default function BlogPage() {
               <Link key={post.slug} href={`/blog/${post.slug}`}
                 className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                 <h2 className="text-lg font-bold text-gray-900 mb-2">{post.title}</h2>
-                <p className="text-gray-500 text-sm line-clamp-2">{post.excerpt}</p>
-                <p className="text-xs text-gray-400 mt-3">{post.date} · {post.author}</p>
+                <p className="text-gray-500 text-sm line-clamp-2">{post.description}</p>
+                <p className="text-xs text-gray-400 mt-3">{post.date} · {post.readTime} read</p>
               </Link>
             ))}
           </div>
