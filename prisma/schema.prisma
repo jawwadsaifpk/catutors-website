@@ -1,0 +1,93 @@
+// schema.prisma — Database blueprint for catutors.com
+// Run "npx prisma db push" to create these tables in Supabase.
+// Run "npx prisma generate" after any change to regenerate the client.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// In Prisma 7 the URL is passed via the adapter in lib/db.ts (runtime)
+// and via prisma.config.ts (CLI). Not written here.
+datasource db {
+  provider = "postgresql"
+}
+
+// A tutor registered on catutors.com.
+// status: "pending" = awaiting admin approval, "approved" = live on site.
+model Tutor {
+  id            Int      @id @default(autoincrement())
+  name          String
+  subjects      String[]
+  areas         String[]
+  city          String
+  phone         String
+  email         String   @unique
+  bio           String
+  photoUrl      String?
+  status        String   @default("pending")
+  createdAt     DateTime @default(now())
+
+  gender        String?   // "Male" | "Female" | "Other"
+  teachingMode  String?   // "In-Person" | "Online" | "Both"
+  availability  String?   // e.g. "Evenings 5PM–9PM"
+  qualification String?   // e.g. "BS Mathematics, UCLA"
+  experience    String?   // e.g. "3 years"
+  classLevels   String[]  @default([])  // e.g. ["Middle School", "High School", "AP", "SAT/ACT"]
+
+  passwordHash  String?
+  featured      Boolean  @default(false)  // gold badge, sorted first
+
+  reviews       Review[]
+  messages      Message[]
+}
+
+// A review left by a student/parent on a tutor profile.
+// Requires admin approval before becoming visible.
+model Review {
+  id           Int      @id @default(autoincrement())
+  tutorId      Int
+  tutor        Tutor    @relation(fields: [tutorId], references: [id], onDelete: Cascade)
+  rating       Int      // 1–5
+  reviewText   String
+  reviewerName String
+  classLevel   String?
+  status       String   @default("pending")  // "pending" | "approved"
+  createdAt    DateTime @default(now())
+}
+
+// A tuition request submitted by a student or parent.
+// No account required — name + phone stored directly.
+// Contact info is visible to all approved tutors (free model).
+// status: "pending" = admin review, "open" = live on jobs board, "filled" = tutor found
+model Lead {
+  id           Int      @id @default(autoincrement())
+  studentName  String
+  studentPhone String
+  subject      String
+  classLevel   String
+  city         String
+  area         String
+  mode         String?   // "In-Person" | "Online" | "Both"
+  gender       String?   // preferred tutor gender
+  budget       String?
+  notes        String?
+  status       String   @default("pending")  // "pending" | "open" | "filled"
+  createdAt    DateTime @default(now())
+
+  messages     Message[]
+}
+
+// A direct message between a tutor and a student, scoped to a job lead.
+model Message {
+  id         Int       @id @default(autoincrement())
+  leadId     Int
+  lead       Lead      @relation(fields: [leadId], references: [id])
+  tutorId    Int
+  tutor      Tutor     @relation(fields: [tutorId], references: [id])
+  senderType String    // "tutor" | "student"
+  body       String
+  readAt     DateTime?
+  createdAt  DateTime  @default(now())
+
+  @@index([leadId, tutorId])
+}
