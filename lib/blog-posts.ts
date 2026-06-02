@@ -1168,6 +1168,64 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── 31 ─────────────────────────────────────────────────────────────────────
+  {
+    slug: "sat-mistakes-california-students",
+    title: "5 Common SAT Mistakes California Students Make (and How to Avoid Them)",
+    description: "California students often lose SAT points to the same avoidable mistakes. Learn the 5 most common errors and proven strategies to fix them before test day.",
+    date: "June 2, 2026",
+    dateISO: "2026-06-02",
+    readTime: "7 min",
+    sections: [
+      { type: "p", text: "Every year, thousands of California high school students sit the SAT hoping to strengthen their college applications. Yet many of them walk out of the testing center having lost points not because the material was too hard, but because of avoidable, repeatable mistakes. The good news: these errors are well-documented, easy to identify, and straightforward to fix with the right preparation. Whether you are a junior just starting your prep or a senior squeezing in a final retake, this guide covers the five most common SAT mistakes California students make — and exactly how to avoid each one." },
+      { type: "h2", text: "1. Skipping the Wrong Questions (or Not Skipping at All)" },
+      { type: "p", text: "One of the most costly SAT mistakes is having a poor guessing-and-skipping strategy. The digital SAT has no penalty for wrong answers, so leaving any question blank is always a mistake. Every unanswered question is a guaranteed zero, while a guess gives you a real shot at a point. On the flip side, many California students spend six or seven minutes wrestling with a single hard math problem and run out of time before reaching easier questions later in the module. The right approach is to flag difficult questions, move on immediately, and return at the end with whatever time remains. A student who answers 40 easier questions correctly and guesses on the remaining 4 will almost always outscore a student who spends equal time on every question." },
+      { type: "ul", items: [
+        "Never leave a question blank — always guess if you run out of time.",
+        "Flag hard questions and skip them on the first pass.",
+        "Return to flagged questions only after completing everything else.",
+        "For math, eliminate clearly wrong answers before guessing to improve your odds.",
+      ]},
+      { type: "h2", text: "2. Ignoring the Reading and Writing Section Until the Last Minute" },
+      { type: "p", text: "California students who are strong in math often pour all their prep time into the Math section and neglect Reading and Writing until the week before the test. This is a major strategic error. The digital SAT's Reading and Writing module is worth exactly half your total score — 400 out of 800 points. It also requires a specific set of skills that do not improve overnight: evidence-based reasoning, grammar conventions, and precision in interpreting small contextual differences in word meaning. Students who ignore this section until the final stretch almost always see their score plateau. Start Reading and Writing practice from week one of your prep, even if math feels like the bigger problem." },
+      { type: "p", text: "A particularly common sub-mistake within this section is reading too much of the passage. Each Reading and Writing question on the digital SAT is paired with a short, focused excerpt. You do not need to read everything surrounding it. Read the question first, identify exactly what it is asking, then read only as much of the passage as needed to answer it. Students who read passages in full waste precious seconds and often introduce confusion by over-thinking context that was never relevant to the question." },
+      { type: "h2", text: "3. Relying on 'Sounds Right' for Grammar Questions" },
+      { type: "p", text: "A very high number of California SAT students answer grammar and usage questions based purely on what sounds natural in casual speech. This approach fails repeatedly on the SAT because standard written English — the variety the test targets — follows rules that are often more formal than everyday California speech. Students who grew up hearing certain constructions frequently will find those constructions feel correct even when they violate subject-verb agreement, parallel structure, or punctuation rules. Trusting your ear is not reliable preparation." },
+      { type: "p", text: "Instead, learn the core grammar rules the SAT actually tests. The list is shorter than most students expect. Subject-verb agreement (including when the subject and verb are separated by a long clause), pronoun-antecedent agreement, comma splices, apostrophe use, parallel structure in lists, and proper use of semicolons and colons cover the vast majority of grammar questions you will see. Practice applying each rule explicitly until you can identify which rule a question is testing before you even read the answer choices." },
+      { type: "ul", items: [
+        "Subject-verb agreement across long clauses",
+        "Pronoun-antecedent agreement (singular vs. plural)",
+        "Comma splices and run-on sentences",
+        "Parallel structure in lists and comparisons",
+        "Correct use of semicolons, colons, and apostrophes",
+        "Transitions: contrast, addition, cause-and-effect",
+      ]},
+      { type: "h2", text: "4. Doing Math Without Writing Anything Down" },
+      { type: "p", text: "California students who excel in math class often develop a habit of doing calculations in their heads to save time. On the SAT, this habit backfires regularly. Mental math under test-day pressure introduces errors that never appear during relaxed practice sessions. Misread signs, dropped negatives, and arithmetic slips are responsible for a surprisingly large percentage of lost math points. The digital SAT provides a built-in calculator and a scratch area for written work — use both." },
+      { type: "p", text: "Write out each step of your work, even if it feels slow. Set up equations before solving them. Label variables clearly so you do not lose track of what x represents three lines into a problem. When a question involves a graph or geometry figure, annotate the figure directly — mark the measurements you know and label what you are looking for. Students who write out their work consistently make fewer careless errors and have something concrete to review if an answer looks wrong." },
+      { type: "p", text: "On the Desmos graphing calculator provided in the Math section, learn to use it efficiently before test day. Many California students open the calculator for the first time during the actual test and waste time figuring out basic functions. Practice using Desmos to graph equations, find intersections, and solve systems — skills that can turn a 3-minute problem into a 30-second one." },
+      { type: "h2", text: "5. Treating Every Practice Session Like a Real Test" },
+      { type: "p", text: "Most California SAT students who are serious about prep take full-length practice tests — which is good. But many of them take those tests, check the score, feel satisfied or disappointed, and move on without ever analyzing which questions they got wrong and why. This is the most expensive preparation mistake of all. Practice tests are not valuable for the practice itself. They are valuable for the diagnostic information they produce." },
+      { type: "p", text: "After every practice test, spend at least as much time reviewing your errors as you spent taking the test. For every wrong answer, identify the specific reason you missed it: did you misread the question? Did you use the wrong formula? Did you confuse two similar grammar rules? Did you run out of time? Each wrong answer belongs to a category, and each category points to a skill gap you can address with targeted practice. Students who review their tests this way improve significantly faster than students who simply keep taking fresh tests and hoping their score rises." },
+      { type: "ul", items: [
+        "Review every wrong answer — not just the ones that surprised you.",
+        "Categorize errors: content gap, careless mistake, time pressure, or misread question.",
+        "Build a short error log after each practice test.",
+        "Revisit the same question type one week later to confirm the skill has stuck.",
+        "Use College Board's official Bluebook app for the most realistic digital SAT practice.",
+      ]},
+      { type: "h2", text: "How a Private SAT Tutor Can Help" },
+      { type: "p", text: "Many California students study for the SAT on their own and hit a score ceiling they cannot break through. A private SAT tutor diagnoses the exact skills holding your score back — something generic test prep apps cannot do reliably. A good tutor will review your practice test errors with you, identify patterns you missed yourself, and build targeted sessions around your specific weak areas. For students aiming for a score above 1400, individualized coaching almost always produces better results than self-study alone." },
+      { type: "links", label: "Find an SAT tutor near you:", items: [
+        { text: "SAT tutors in Los Angeles", href: "/los-angeles/sat" },
+        { text: "SAT tutors in San Diego", href: "/san-diego/sat" },
+        { text: "SAT tutors in San Francisco", href: "/san-francisco/sat" },
+        { text: "SAT tutors in San Jose", href: "/san-jose/sat" },
+      ]},
+      { type: "p", text: "The SAT rewards students who prepare strategically, not just students who study the most hours. Avoid these five mistakes, build a consistent review habit, and consider working with a private SAT tutor to close the gaps. California's top universities are competitive — every point matters, and every preventable mistake is a point you can take back." },
+    ],
+  },
+
   // APPEND NEW POSTS ABOVE THIS LINE
 ];
 
