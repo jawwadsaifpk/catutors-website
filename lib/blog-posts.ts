@@ -197,7 +197,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "links", label: "Find math tutors in San Diego:", items: [
         { text: "Mathematics tutors in San Diego", href: "/san-diego/mathematics" },
         { text: "AP Calculus tutors in San Diego", href: "/san-diego/ap-calculus-ab" },
-        { text: "SAT Math tutors in San Diego", href: "/san-diego/sat-math" },
+        { text: "SAT prep tutors in San Diego", href: "/san-diego/sat-prep" },
       ]},
       { type: "h2", text: "3. What to Look for in a Math Tutor in San Diego" },
       { type: "p", text: "The best math tutors in San Diego share a few key traits. First, they genuinely understand the specific course or test your child is working on — not just math in general. A tutor who excels at teaching Calculus may not be the best fit for a 6th grader working on fractions. Second, a good math tutor diagnoses the root cause of the student's difficulty rather than just reteaching the textbook from the beginning. Third, they assign practice problems between sessions and follow up on them the next time — because without practice between sessions, learning does not stick." },
@@ -1031,9 +1031,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "2. When MCAT Prep Tutoring Is Worth the Cost" },
       { type: "p", text: "MCAT prep tutoring in California is expensive — qualified tutors typically charge $100 to $180 per hour, and top-tier specialists can charge more. Given this cost, tutoring is most valuable in specific situations. First, when a student has completed a full-length MCAT practice test and is scoring 10 or more points below their target score — self-study alone is unlikely to close that gap efficiently. Second, when one or two specific sections are pulling the total score down significantly. Third, when previous self-study attempts have plateaued despite consistent effort. For students close to their target score, self-study with practice tests may be sufficient; for those significantly below it, a tutor is often the most efficient investment." },
       { type: "links", label: "Find an MCAT prep tutor near you:", items: [
-        { text: "MCAT prep tutors in Los Angeles", href: "/los-angeles/mcat-prep" },
-        { text: "MCAT prep tutors in San Francisco", href: "/san-francisco/mcat-prep" },
-        { text: "MCAT prep tutors in San Diego", href: "/san-diego/mcat-prep" },
+        { text: "MCAT prep tutors in Los Angeles", href: "/los-angeles/biology" },
+        { text: "MCAT prep tutors in San Francisco", href: "/san-francisco/biology" },
+        { text: "MCAT prep tutors in San Diego", href: "/san-diego/biology" },
       ]},
       { type: "h2", text: "3. What to Look for in an MCAT Tutor in California" },
       { type: "p", text: "Choosing an MCAT tutor in California requires careful vetting. The tutor should have scored 515 or above on the actual MCAT — not just studied the material. This is the single most important qualification to verify. Ask directly: what did you score on the MCAT, and on which test date? A strong MCAT tutor should also have experience tutoring the specific section or sections you are weakest in — CARS (Critical Analysis and Reasoning Skills) requires very different preparation from Biochemistry or Physics, and not every high scorer is an effective teacher across all sections. Ask for references from past students and ask specifically about score improvements achieved." },
@@ -1071,7 +1071,7 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "links", label: "Find a coding tutor near you:", items: [
         { text: "Python tutors in Los Angeles", href: "/los-angeles/python" },
         { text: "Python tutors in San Jose", href: "/san-jose/python" },
-        { text: "Coding for kids tutors in San Diego", href: "/san-diego/coding-for-kids" },
+        { text: "Computer Science tutors in San Diego", href: "/san-diego/computer-science" },
       ]},
       { type: "h2", text: "3. What a Python Tutor for Kids Should Cover" },
       { type: "p", text: "A Python tutor for kids in California should cover foundational programming concepts through hands-on projects rather than abstract lectures. In the first few months, a student should learn variables and data types, conditionals and if-else logic, loops (for and while), functions and parameters, and basic list manipulation. Projects like a simple calculator, a text-based guessing game, or a basic data analyzer make these concepts concrete and engaging. A good Python tutor for kids always relates what is being learned to something the student finds interesting — whether that is game design, math, biology, or social statistics. Motivation is everything at the beginner stage." },
