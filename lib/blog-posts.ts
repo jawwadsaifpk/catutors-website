@@ -1418,6 +1418,60 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 
+  // ── 34 ─────────────────────────────────────────────────────────────────────
+  {
+    slug: "school-discipline-crisis-california",
+    title: "School Discipline Crisis Failing California Students",
+    description: "California's school discipline crisis is pushing vulnerable students further behind. Learn who is most affected, what the data shows, and how families can respond.",
+    date: "June 3, 2026",
+    dateISO: "2026-06-03",
+    readTime: "7 min",
+    sections: [
+      { type: "p", text: "California suspends more students than almost any other state in the nation. In a single school year, hundreds of thousands of California students lose instructional days to out-of-school suspension — days that are almost never made up, in subjects that do not pause for absent learners. The school discipline crisis in California is not random. It falls hardest on Black students, students with disabilities, and children from low-income households. These are already the students with the fewest safety nets. When suspension becomes the school's primary response to struggle, the students who need the most support are pushed furthest from the classroom — and from any realistic path to success." },
+      { type: "h2", text: "1. The Scale of the School Discipline Crisis in California" },
+      { type: "p", text: "According to data from the California Department of Education, over 280,000 California students were suspended at least once in the 2021–22 school year — even after suspension rates fell significantly following pandemic-era reforms. Black students in California are suspended at four times the rate of their white peers. Students with disabilities are suspended at twice the rate of general-education students. In Los Angeles Unified alone — the second-largest school district in the country — suspension has historically been used for subjective offenses like \"willful defiance,\" a catch-all category that research consistently shows is applied in racially unequal ways. These are not isolated statistics. They describe a system-wide pattern." },
+      { type: "image", src: "/blog/school-discipline-california.png", alt: "Infographic: California school discipline data — 280,000+ suspensions in 2021-22, Black students suspended at 4x the rate of white peers, students with disabilities at 2x rate, willful defiance top cited reason", caption: "California school suspension data reveals deep racial and disability-related disparities (2021–22 school year)" },
+      { type: "h2", text: "2. What Suspension Actually Does to a Student's Academic Trajectory" },
+      { type: "p", text: "A student who is suspended misses class. That sounds obvious — but the downstream consequences are rarely discussed honestly. Research from the University of California, Los Angeles found that each suspension increases the likelihood of a student dropping out of high school by approximately 20%. Students who are suspended fall behind in core subjects, often without any catch-up support provided by the school. In mathematics especially — where each concept builds on the last — even a week of missed instruction can create a gap that compounds for the rest of the semester. For students already operating below grade level, a suspension is not a pause. It is frequently the beginning of a permanent separation from the school system." },
+      { type: "links", label: "Help your student catch up after missed school:", items: [
+        { text: "Find a private tutor in California", href: "/blog/find-private-tutor-california" },
+        { text: "Math tutors in Los Angeles", href: "/los-angeles/mathematics" },
+        { text: "Math tutors in Sacramento", href: "/sacramento/mathematics" },
+      ]},
+      { type: "h2", text: "3. The School-to-Prison Pipeline — California's Uncomfortable Truth" },
+      { type: "p", text: "Criminologists and education researchers use the term \"school-to-prison pipeline\" to describe a pattern documented across the United States: students who are repeatedly suspended or expelled are significantly more likely to become involved in the juvenile and adult criminal justice systems. In California, this pipeline has a clear racial dimension. A 2023 report from the Center on Juvenile and Criminal Justice found that California counties with the highest suspension rates for Black students had correspondingly higher rates of juvenile detention for the same demographic. The students being suspended are not inherently more dangerous. They are navigating more difficult circumstances — and receiving punishment where they need support." },
+      { type: "h2", text: "4. Willful Defiance — California's Most Controversial Discipline Category" },
+      { type: "p", text: "\"Willful defiance\" is a disciplinary category that allows California schools to suspend students for broadly subjective behaviours — talking back, refusing to put a phone away, being disruptive. It is the single most commonly cited reason for suspension in California schools, and it is applied at dramatically different rates depending on a student's race. In 2019, California banned willful-defiance suspensions for students in grades K–8. In 2021, the ban was extended through grade 12. However, enforcement is inconsistent, and schools have found ways to reclassify behaviour under other categories. The underlying dynamic — using suspension as a management tool rather than a genuine intervention — has not been fully resolved." },
+      { type: "h2", text: "5. Restorative Justice — Does the Alternative Work?" },
+      { type: "p", text: "California has invested in restorative justice programmes as an alternative to punitive discipline. Restorative practices focus on repairing relationships and addressing the underlying causes of disruptive behaviour, rather than removing students from school. The evidence is promising. Schools in Oakland and San Francisco that implemented restorative justice with fidelity — meaning actual staff training, time, and administrative commitment — saw suspension rates drop by 40% or more over three years. However, restorative justice requires resources. It requires trained facilitators, time set aside from an already crowded schedule, and a school culture that genuinely believes behaviour is something to be addressed rather than just punished. Not every district has made that investment." },
+      { type: "ul", items: [
+        "Restorative circles allow students and teachers to address conflicts directly and collaboratively",
+        "Trained counselors support students in understanding the impact of their behaviour",
+        "Schools with restorative programmes report improved school climate alongside lower suspension rates",
+        "The model works best when supported by school leadership — not just individual teachers",
+        "California's Restorative Justice initiative has funded dozens of district pilots since 2019",
+        "Long-term suspension reduction requires culture change, not just policy change",
+      ]},
+      { type: "h2", text: "6. How Students With Disabilities Are Particularly Affected" },
+      { type: "p", text: "Federal law — specifically the Individuals with Disabilities Education Act (IDEA) — provides protections for students with disabilities who face suspension. Schools are required to conduct a manifestation determination review when a student with an Individualized Education Program (IEP) faces more than ten cumulative days of suspension in a year. The review must determine whether the behaviour was caused by the disability. In practice, these reviews are often rushed, and parents are frequently unaware of their rights. In California, special-education students are disproportionately Black and from low-income households, meaning the effects of the discipline gap compound with disability status and socioeconomic vulnerability in the same children." },
+      { type: "links", label: "Support for students who have fallen behind:", items: [
+        { text: "Elementary math tutors in California", href: "/blog/elementary-math-tutor-california" },
+        { text: "Private vs group tutoring — which works better", href: "/blog/private-vs-group-tutoring" },
+        { text: "Online vs in-person tutoring in California", href: "/blog/online-vs-inperson-tutoring" },
+      ]},
+      { type: "h2", text: "7. What Parents Can Do When Their Child Faces Suspension" },
+      { type: "p", text: "Parents have more rights than most school administrators volunteer. When a suspension is issued, request a written explanation of the specific conduct and the rule violated. Ask whether restorative alternatives were considered before suspension was chosen. If your child has an IEP or 504 plan, request a manifestation determination review immediately — do not wait for the school to initiate it. Contact your district's parent liaison or, if necessary, a special-education advocate. Keep records of all communications in writing. A suspension is not the end of the story, but acting quickly and with clear documentation gives your child the best chance of a swift return to learning with their rights intact." },
+      { type: "h2", text: "8. Closing the Gap — Academic Recovery After Suspension" },
+      { type: "p", text: "A student returning from suspension faces a classroom that moved on without them. Teachers rarely have time to provide individual catch-up instruction during a normal school day. The gaps are real, they are immediate, and they tend to grow if not addressed within the first week of return. One-on-one tutoring is one of the most effective tools for rapid academic recovery. A private tutor can work through exactly the material missed, identify which concepts are prerequisites for upcoming lessons, and rebuild a student's confidence after an experience that is often humiliating and demoralising. Early academic recovery reduces the risk of re-suspension — because a student who understands the lesson is far less likely to disengage behaviourally in class." },
+      { type: "links", label: "Find academic support for your child:", items: [
+        { text: "Private tutors in Los Angeles", href: "/los-angeles" },
+        { text: "Private tutors in Oakland", href: "/oakland" },
+        { text: "How much does tutoring cost in California", href: "/blog/tutor-cost-california-2026" },
+      ]},
+      { type: "p", text: "California's school discipline crisis is a solvable problem. The research on what works — restorative practices, better counselor ratios, trauma-informed teaching, and targeted academic support — is clear. What has been lacking is the political will and sustained funding to implement it consistently across every district. For families whose children are caught in the system right now, the path forward is advocacy, knowledge of your rights, and immediate academic support to prevent the gaps from becoming permanent. Your child's setback does not have to define their trajectory." },
+    ],
+  },
+
   // APPEND NEW POSTS ABOVE THIS LINE
 ];
 
