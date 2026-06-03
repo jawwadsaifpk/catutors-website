@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "@/components/Footer";
-import { BLOG_POSTS } from "@/lib/blog-posts";
+import { getAllPosts } from "@/lib/blog-posts";
+
+const BLOG_POSTS = getAllPosts();
 
 export const metadata: Metadata = {
   title: "Blog",

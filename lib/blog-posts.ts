@@ -6,7 +6,8 @@ export type BlogSection =
   | { type: "h2"; text: string }
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] }
-  | { type: "links"; label: string; items: { text: string; href: string }[] };
+  | { type: "links"; label: string; items: { text: string; href: string }[] }
+  | { type: "image"; src: string; alt: string; caption?: string };
 
 export type BlogPost = {
   slug: string;
@@ -1223,6 +1224,54 @@ export const BLOG_POSTS: BlogPost[] = [
         { text: "SAT prep tutors in San Jose", href: "/san-jose/sat-prep" },
       ]},
       { type: "p", text: "The SAT rewards students who prepare strategically, not just students who study the most hours. Avoid these five mistakes, build a consistent review habit, and consider working with a private SAT tutor to close the gaps. California's top universities are competitive — every point matters, and every preventable mistake is a point you can take back." },
+    ],
+  },
+
+  // ── 6 ──────────────────────────────────────────────────────────────────────
+  {
+    slug: "how-much-screen-time-is-too-much",
+    title: "How Much Screen Time Is Too Much? What the Research Actually Says",
+    description: "Forget the hour limits — research says screen time harms kids when it crowds out sleep, exercise, or schoolwork. Here's what California parents need to know.",
+    date: "June 3, 2026",
+    dateISO: "2026-06-03",
+    readTime: "5 min",
+    sections: [
+      { type: "p", text: "Every California parent has heard the warnings: two hours a day, no screens before bed, no phones at dinner. But when researchers actually look at the data, the picture is more nuanced — and more useful — than any single number suggests. The question isn't really how many hours your child spends on a screen. It's what the screen is pushing out of their day." },
+      { type: "h2", text: "Stop Counting Hours — Protect What Gets Crowded Out" },
+      { type: "image", src: "/blog/screen-time-infographic.png", alt: "How much screen time is too much? Infographic showing the four things screens push out: sleep, physical activity, in-person time, and schoolwork.", caption: "The real question isn't how long — it's what screen time replaces." },
+      { type: "p", text: "A 2019 study published in JAMA Pediatrics tracked over 2,000 children and found that screen time itself was less predictive of poor outcomes than whether it displaced sleep, physical activity, in-person socialising, or schoolwork. Children who hit those four pillars consistently — regardless of total screen hours — showed no significant cognitive or behavioural disadvantage. The harm comes from the displacement, not the device." },
+      { type: "ul", items: [
+        "Sleep — screens before bed suppress melatonin and delay sleep onset, even with night mode on",
+        "Physical activity — sedentary screen use replaces movement California kids already struggle to get enough of",
+        "In-person time — passive scrolling is qualitatively different from face-to-face conversation for social development",
+        "Schoolwork — homework pushed aside for entertainment creates cumulative academic gaps",
+      ]},
+      { type: "h2", text: "What the American Academy of Pediatrics Actually Recommends" },
+      { type: "p", text: "The AAP dropped its strict two-hour limit in 2016 after acknowledging it was based on early research that didn't distinguish between types of screen use. Their current guidance focuses on content quality and consistent family rules rather than a hard daily cap. Video calls with grandparents, coding practice, and reading on a tablet are not equivalent to passive YouTube scrolling — even if the clock looks the same." },
+      { type: "p", text: "Their current framework for school-age children (6 and up): set consistent limits on leisure screen time, prioritise adequate sleep and physical activity, and keep media use out of bedrooms overnight. For teenagers, the emphasis shifts to encouraging self-regulation rather than parental enforcement — a skill that will serve them far beyond the household." },
+      { type: "h2", text: "The Bedroom Rule Is the One Worth Keeping" },
+      { type: "p", text: "If you take one concrete action from the research, make it this: no phones in the bedroom overnight. A University of California study found that teens who charged their phones outside the bedroom slept an average of 21 minutes longer per night and reported significantly lower anxiety scores. That single habit — easier to enforce than a daily hour count — had measurable effects within two weeks." },
+      { type: "h2", text: "When Screen Time Becomes a Academic Problem" },
+      { type: "p", text: "The clearest academic warning sign is not total hours but evening timing. Students who use entertainment screens heavily between 9 PM and midnight show the steepest drops in next-day attention and working memory — the exact skills needed for reading comprehension, maths problem-solving, and written expression. If your child's grades have softened and late-night screen use has crept up, the connection is likely causal rather than coincidental." },
+      { type: "p", text: "A structured after-school routine — homework before any leisure screen time, devices off an hour before bed — eliminates most of the academic risk associated with screens without requiring parents to police every minute. Tutoring can also help rebuild habits and close gaps that formed during high-screen periods, particularly in maths and English where cumulative skills compound quickly." },
+      { type: "h2", text: "Practical Rules That Actually Work" },
+      { type: "ol", items: [
+        "Charge phones outside the bedroom — the single highest-impact rule",
+        "Homework before screens, every day, no exceptions",
+        "Protect the dinner hour — no devices for anyone at the table",
+        "Set a household screen-off time (not per-child — one rule for the whole family is easier to enforce)",
+        "Discuss content, not just duration — ask what they watched, not just how long",
+      ]},
+      { type: "h2", text: "If Screens Have Already Hurt Your Child's Grades" },
+      { type: "p", text: "Screen habits that have built up over months rarely reverse in a week. If your child has fallen behind in a subject — especially maths, where gaps compound — habit changes alone may not be enough to catch up before exams. A private tutor who works one-on-one can identify exactly where the knowledge gaps are and close them systematically, faster than classroom teaching allows." },
+      { type: "links", label: "Find a tutor near you:", items: [
+        { text: "Math tutors in Los Angeles", href: "/los-angeles/math" },
+        { text: "Math tutors in San Diego", href: "/san-diego/math" },
+        { text: "Math tutors in San Jose", href: "/san-jose/math" },
+        { text: "English tutors in Los Angeles", href: "/los-angeles/english" },
+        { text: "English tutors in San Francisco", href: "/san-francisco/english" },
+      ]},
+      { type: "p", text: "The research is clear: screens are not the enemy, but displacement is. Protect sleep, movement, face-to-face connection, and schoolwork — and the hours largely take care of themselves." },
     ],
   },
 

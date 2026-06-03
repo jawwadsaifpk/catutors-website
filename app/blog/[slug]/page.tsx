@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import { getPostBySlug, getAllPosts, type BlogSection } from "@/lib/blog-posts";
@@ -49,6 +50,13 @@ function RenderSection({ section }: { section: BlogSection }) {
             ))}
           </ul>
         </div>
+      );
+    case "image":
+      return (
+        <figure className="my-8">
+          <Image src={section.src} alt={section.alt} width={1080} height={1080} className="rounded-2xl w-full h-auto" />
+          {section.caption && <figcaption className="text-center text-sm text-gray-400 mt-2">{section.caption}</figcaption>}
+        </figure>
       );
   }
 }
