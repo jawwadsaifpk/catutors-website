@@ -1265,9 +1265,9 @@ export const BLOG_POSTS: BlogPost[] = [
       { type: "h2", text: "If Screens Have Already Hurt Your Child's Grades" },
       { type: "p", text: "Screen habits that have built up over months rarely reverse in a week. If your child has fallen behind in a subject — especially maths, where gaps compound — habit changes alone may not be enough to catch up before exams. A private tutor who works one-on-one can identify exactly where the knowledge gaps are and close them systematically, faster than classroom teaching allows." },
       { type: "links", label: "Find a tutor near you:", items: [
-        { text: "Math tutors in Los Angeles", href: "/los-angeles/math" },
-        { text: "Math tutors in San Diego", href: "/san-diego/math" },
-        { text: "Math tutors in San Jose", href: "/san-jose/math" },
+        { text: "Math tutors in Los Angeles", href: "/los-angeles/mathematics" },
+        { text: "Math tutors in San Diego", href: "/san-diego/mathematics" },
+        { text: "Math tutors in San Jose", href: "/san-jose/mathematics" },
         { text: "English tutors in Los Angeles", href: "/los-angeles/english" },
         { text: "English tutors in San Francisco", href: "/san-francisco/english" },
       ]},
