@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="460" fill="#FAF5FF" rx="16"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="80" fill="#6D28D9" rx="16"/>
+  <rect y="64" width="800" height="16" fill="#6D28D9"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="white" font-size="21" font-weight="700">The California College Admissions Race</text>
+  <text x="400" y="60" text-anchor="middle" fill="#DDD6FE" font-size="13">How competition is reshaping what high school looks like in California</text>
+
+  <!-- Big stat: acceptance rate -->
+  <rect x="30" y="108" width="220" height="160" fill="white" rx="12"/>
+  <text x="140" y="150" text-anchor="middle" fill="#6D28D9" font-size="56" font-weight="800">&lt;11%</text>
+  <text x="140" y="178" text-anchor="middle" fill="#374151" font-size="13" font-weight="600">UC Berkeley acceptance</text>
+  <text x="140" y="196" text-anchor="middle" fill="#374151" font-size="13" font-weight="600">rate in 2023</text>
+  <text x="140" y="220" text-anchor="middle" fill="#9CA3AF" font-size="11">down from 25% a decade ago</text>
+  <text x="140" y="255" text-anchor="middle" fill="#9CA3AF" font-size="10">Source: UC Admissions Data</text>
+
+  <!-- Stat 2 -->
+  <rect x="270" y="108" width="165" height="160" fill="white" rx="12"/>
+  <text x="352" y="155" text-anchor="middle" fill="#6D28D9" font-size="52" font-weight="800">5+</text>
+  <text x="352" y="178" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">AP courses taken</text>
+  <text x="352" y="195" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">by avg competitive</text>
+  <text x="352" y="212" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">CA applicant</text>
+  <text x="352" y="255" text-anchor="middle" fill="#9CA3AF" font-size="10">College Board data</text>
+
+  <!-- Stat 3 -->
+  <rect x="455" y="108" width="145" height="160" fill="white" rx="12"/>
+  <text x="527" y="155" text-anchor="middle" fill="#DC2626" font-size="48" font-weight="800">60%</text>
+  <text x="527" y="178" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">of CA teens feel</text>
+  <text x="527" y="195" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">constantly stressed</text>
+  <text x="527" y="215" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">about admissions</text>
+  <text x="527" y="255" text-anchor="middle" fill="#9CA3AF" font-size="10">Silicon Valley survey</text>
+
+  <!-- Stat 4 -->
+  <rect x="620" y="108" width="150" height="160" fill="white" rx="12"/>
+  <text x="695" y="148" text-anchor="middle" fill="#DC2626" font-size="44" font-weight="800">6.5hr</text>
+  <text x="695" y="172" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">avg nightly sleep</text>
+  <text x="695" y="192" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">for competitive</text>
+  <text x="695" y="210" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">CA high schoolers</text>
+  <text x="695" y="228" text-anchor="middle" fill="#9CA3AF" font-size="11">recommended: 9hr</text>
+  <text x="695" y="255" text-anchor="middle" fill="#9CA3AF" font-size="10">APA / CDC guidance</text>
+
+  <!-- Bottom section: myth vs reality -->
+  <rect x="30" y="288" width="360" height="148" fill="#6D28D9" rx="12"/>
+  <text x="210" y="315" text-anchor="middle" fill="white" font-size="14" font-weight="700">The Myth</text>
+  <line x1="50" y1="323" x2="370" y2="323" stroke="#7C3AED" stroke-width="1"/>
+  <text x="210" y="345" text-anchor="middle" fill="#DDD6FE" font-size="12">"A prestigious university name</text>
+  <text x="210" y="363" text-anchor="middle" fill="#DDD6FE" font-size="12">guarantees a better career."</text>
+  <text x="210" y="393" text-anchor="middle" fill="white" font-size="13" font-weight="600">The Research Reality</text>
+  <text x="210" y="413" text-anchor="middle" fill="#DDD6FE" font-size="12">Student ambition predicts earnings —</text>
+  <text x="210" y="430" text-anchor="middle" fill="#DDD6FE" font-size="12">not the selectivity of their school.</text>
+
+  <!-- Bottom right: smarter approach -->
+  <rect x="410" y="288" width="360" height="148" fill="white" rx="12"/>
+  <text x="590" y="315" text-anchor="middle" fill="#6D28D9" font-size="14" font-weight="700">A Healthier College Plan</text>
+  <line x1="430" y1="323" x2="750" y2="323" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="430" y="345" fill="#374151" font-size="12">✓  Take APs in subjects you enjoy</text>
+  <text x="430" y="367" fill="#374151" font-size="12">✓  Build a balanced school list</text>
+  <text x="430" y="389" fill="#374151" font-size="12">✓  Protect sleep — it improves scores</text>
+  <text x="430" y="411" fill="#374151" font-size="12">✓  Targeted tutoring reduces prep time</text>
+  <text x="590" y="430" text-anchor="middle" fill="#9CA3AF" font-size="11">catutors.com</text>
+</svg>

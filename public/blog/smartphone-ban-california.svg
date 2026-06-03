@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" font-family="system-ui, -apple-system, sans-serif">
+  <!-- Background -->
+  <rect width="800" height="460" fill="#FFF7ED" rx="16"/>
+
+  <!-- Header -->
+  <rect width="800" height="80" fill="#C2410C" rx="16"/>
+  <rect y="64" width="800" height="16" fill="#C2410C"/>
+  <text x="400" y="35" text-anchor="middle" fill="white" font-size="21" font-weight="700">California School Smartphone Ban — The Facts</text>
+  <text x="400" y="60" text-anchor="middle" fill="#FED7AA" font-size="13">Law signed 2024 · Full implementation required by July 2026</text>
+
+  <!-- Timeline bar -->
+  <rect x="30" y="105" width="740" height="56" fill="white" rx="10"/>
+  <text x="400" y="125" text-anchor="middle" fill="#C2410C" font-size="12" font-weight="700">IMPLEMENTATION TIMELINE</text>
+  <!-- dots -->
+  <circle cx="120" cy="143" r="8" fill="#C2410C"/>
+  <line x1="128" y1="143" x2="310" y2="143" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="318" cy="143" r="8" fill="#C2410C"/>
+  <line x1="326" y1="143" x2="490" y2="143" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="498" cy="143" r="8" fill="#E5E7EB"/>
+  <line x1="506" y1="143" x2="670" y2="143" stroke="#E5E7EB" stroke-width="2"/>
+  <circle cx="678" cy="143" r="8" fill="#E5E7EB"/>
+  <text x="120" y="158" text-anchor="middle" fill="#374151" font-size="9">2022 Debate begins</text>
+  <text x="318" y="158" text-anchor="middle" fill="#374151" font-size="9">2024 Law signed</text>
+  <text x="498" y="158" text-anchor="middle" fill="#9CA3AF" font-size="9">2025 District pilots</text>
+  <text x="678" y="158" text-anchor="middle" fill="#9CA3AF" font-size="9">Jul 2026 Full rollout</text>
+
+  <!-- Stat cards row -->
+  <rect x="30" y="178" width="175" height="140" fill="white" rx="12"/>
+  <text x="117" y="225" text-anchor="middle" fill="#C2410C" font-size="50" font-weight="800">14%</text>
+  <text x="117" y="250" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">test score boost for</text>
+  <text x="117" y="267" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">lowest achievers</text>
+  <text x="117" y="290" text-anchor="middle" fill="#9CA3AF" font-size="10">LSE study, phone-free schools</text>
+  <text x="117" y="305" text-anchor="middle" fill="#9CA3AF" font-size="10">vs. schools with phones</text>
+
+  <rect x="218" y="178" width="175" height="140" fill="white" rx="12"/>
+  <text x="305" y="225" text-anchor="middle" fill="#C2410C" font-size="50" font-weight="800">6.4%</text>
+  <text x="305" y="250" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">overall test score</text>
+  <text x="305" y="267" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">improvement</text>
+  <text x="305" y="290" text-anchor="middle" fill="#9CA3AF" font-size="10">across all students in</text>
+  <text x="305" y="305" text-anchor="middle" fill="#9CA3AF" font-size="10">phone-restricted schools</text>
+
+  <rect x="406" y="178" width="175" height="140" fill="white" rx="12"/>
+  <text x="493" y="225" text-anchor="middle" fill="#C2410C" font-size="50" font-weight="800">40%</text>
+  <text x="493" y="250" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">fewer disciplinary</text>
+  <text x="493" y="267" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">incidents reported</text>
+  <text x="493" y="290" text-anchor="middle" fill="#9CA3AF" font-size="10">in CA pilot districts</text>
+  <text x="493" y="305" text-anchor="middle" fill="#9CA3AF" font-size="10">with full phone bans</text>
+
+  <rect x="594" y="178" width="176" height="140" fill="white" rx="12"/>
+  <text x="682" y="222" text-anchor="middle" fill="#C2410C" font-size="46" font-weight="800">LAUSD</text>
+  <text x="682" y="248" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">uses Yondr pouches —</text>
+  <text x="682" y="265" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">phones locked on entry,</text>
+  <text x="682" y="282" text-anchor="middle" fill="#374151" font-size="12" font-weight="600">unlocked at dismissal</text>
+  <text x="682" y="305" text-anchor="middle" fill="#9CA3AF" font-size="10">2nd largest US district</text>
+
+  <!-- For / Against -->
+  <rect x="30" y="335" width="355" height="100" fill="white" rx="12"/>
+  <text x="207" y="358" text-anchor="middle" fill="#15803D" font-size="13" font-weight="700">Arguments For the Ban</text>
+  <text x="50" y="378" fill="#374151" font-size="11">✓  Reduces classroom distraction and social comparison</text>
+  <text x="50" y="396" fill="#374151" font-size="11">✓  Less cyberbullying during school hours</text>
+  <text x="50" y="414" fill="#374151" font-size="11">✓  Students report more face-to-face interaction</text>
+
+  <rect x="400" y="335" width="370" height="100" fill="white" rx="12"/>
+  <text x="585" y="358" text-anchor="middle" fill="#DC2626" font-size="13" font-weight="700">Key Concerns Raised</text>
+  <text x="420" y="378" fill="#374151" font-size="11">✗  Parent emergency communication worries</text>
+  <text x="420" y="396" fill="#374151" font-size="11">✗  Accessibility tools for students with disabilities</text>
+  <text x="420" y="414" fill="#374151" font-size="11">✗  Inconsistent enforcement across 1,000+ districts</text>
+</svg>
