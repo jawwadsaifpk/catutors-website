@@ -1,5 +1,5 @@
 # Blog Master Plan — catutors.com
-_Last updated: 2026-05-31 | Posts published: 30 | Posts planned: 0_
+_Last updated: 2026-06-03 | Posts published: 33 | Posts planned: 0_
 
 ---
 
@@ -219,6 +219,9 @@ These are high search-intent keyword clusters to prioritize. Every post must map
 | 28 | Python Tutor for Kids in California — What to Know | python-tutor-kids-california | Subject | May 31, 2026 |
 | 29 | Part-Time Tutoring in California — How to Get Started | part-time-tutoring-california | Tutor Career | May 31, 2026 |
 | 30 | Home Tutors in Fresno, California — Find the Best | home-tutor-fresno-california | City | May 31, 2026 |
+| 31 | Teen Mental Health Crisis in California Schools | teen-mental-health-california-schools | Advice | Jun 3, 2026 |
+| 32 | College Admissions Stress in California: Is It Worth It? | college-admissions-stress-california | Advice | Jun 3, 2026 |
+| 33 | School Smartphone Bans in California — The Full Debate | smartphone-ban-california-schools | Comparison | Jun 3, 2026 |
 
 ---
 
@@ -255,6 +258,7 @@ SAT Prep, ACT Prep, AP Calculus, AP Chemistry, AP Physics, AP Biology, Mathemati
 | Month | Posts Published | Total Posts | Notes |
 |---|---|---|---|
 | May 2026 | 30 | 30 | Initial batch of 30 posts published |
+| Jun 2026 | 3 | 33 | Teen mental health, college admissions stress, smartphone ban posts |
 | Jun 2026 | — | — | — |
 | Jul 2026 | — | — | — |
 | Aug 2026 | — | — | — |
