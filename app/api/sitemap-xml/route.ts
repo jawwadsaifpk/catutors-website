@@ -9,7 +9,7 @@ export const dynamic = "force-dynamic";
 const BASE_URL = "https://www.catutors.com";
 
 function toSlug(str: string) {
-  return str.toLowerCase().replace(/\s+/g, "-").replace(/[()]/g, "").replace(/--+/g, "-");
+  return str.toLowerCase().replace(/&/g, "and").replace(/\s+/g, "-").replace(/[()]/g, "").replace(/--+/g, "-");
 }
 
 function urlTag(loc: string, opts: { lastmod?: Date | string; changefreq?: string; priority?: number }): string {
