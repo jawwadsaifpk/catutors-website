@@ -1,5 +1,5 @@
 # Blog Master Plan — catutors.com
-_Last updated: 2026-06-03 | Posts published: 34 | Posts planned: 0_
+_Last updated: 2026-06-03 | Posts published: 38 | Posts planned: 0_
 
 ---
 
@@ -223,6 +223,10 @@ These are high search-intent keyword clusters to prioritize. Every post must map
 | 32 | College Admissions Stress in California: Is It Worth It? | college-admissions-stress-california | Advice | Jun 3, 2026 |
 | 33 | School Smartphone Bans in California — The Full Debate | smartphone-ban-california-schools | Comparison | Jun 3, 2026 |
 | 34 | School Discipline Crisis Failing California Students | school-discipline-crisis-california | Advice | Jun 3, 2026 |
+| 35 | Home Tutors in Long Beach — Complete Parent Guide | home-tutor-long-beach | City | Jun 3, 2026 |
+| 36 | Algebra Tutor in California — What Every Parent Needs | algebra-tutor-california | Subject | Jun 3, 2026 |
+| 37 | AP US History in California — How to Score a 5 | ap-us-history-tutor-california | Exam Prep | Jun 3, 2026 |
+| 38 | How to Build a Tutoring Business in California | build-tutoring-business-california | Tutor Career | Jun 3, 2026 |
 
 ---
 
@@ -259,7 +263,7 @@ SAT Prep, ACT Prep, AP Calculus, AP Chemistry, AP Physics, AP Biology, Mathemati
 | Month | Posts Published | Total Posts | Notes |
 |---|---|---|---|
 | May 2026 | 30 | 30 | Initial batch of 30 posts published |
-| Jun 2026 | 4 | 34 | Teen mental health, college admissions stress, smartphone ban, school discipline posts |
+| Jun 2026 | 8 | 38 | Teen mental health, college admissions, smartphone ban, school discipline, Long Beach, Algebra, AP US History, tutoring business |
 | Jun 2026 | — | — | — |
 | Jul 2026 | — | — | — |
 | Aug 2026 | — | — | — |
