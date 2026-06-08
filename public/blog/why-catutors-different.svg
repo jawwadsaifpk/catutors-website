@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" font-family="system-ui, -apple-system, sans-serif">
+  <rect width="800" height="460" fill="#F0F7FF" rx="16"/>
+
+  <rect width="800" height="80" fill="#1D4ED8" rx="16"/>
+  <rect y="64" width="800" height="16" fill="#1D4ED8"/>
+  <text x="400" y="35" text-anchor="middle" fill="white" font-size="22" font-weight="700">catutors.com vs. Traditional Tutoring Agencies</text>
+  <text x="400" y="60" text-anchor="middle" fill="#BFDBFE" font-size="14">A side-by-side look at the difference • catutors.com</text>
+
+  <rect x="30" y="110" width="350" height="310" fill="white" rx="12"/>
+  <text x="205" y="140" text-anchor="middle" fill="#DC2626" font-size="15" font-weight="700">Traditional Agencies</text>
+  <line x1="50" y1="152" x2="360" y2="152" stroke="#FCA5A5" stroke-width="1"/>
+  <text x="60" y="178" fill="#374151" font-size="12">✗ Charge parents $50–$150/hr in fees</text>
+  <text x="60" y="203" fill="#374151" font-size="12">✗ Take a cut of every tutor's pay</text>
+  <text x="60" y="228" fill="#374151" font-size="12">✗ Lock contact info behind paywalls</text>
+  <text x="60" y="253" fill="#374151" font-size="12">✗ Generic, nationwide tutor pools</text>
+  <text x="60" y="278" fill="#374151" font-size="12">✗ Slow manual matching process</text>
+  <text x="60" y="303" fill="#374151" font-size="12">✗ Token / credit systems to message</text>
+  <text x="60" y="328" fill="#374151" font-size="12">✗ Long sign-up forms and upsells</text>
+  <text x="60" y="353" fill="#374151" font-size="12">✗ Little focus on local CA curriculum</text>
+  <text x="60" y="378" fill="#374151" font-size="12">✗ Reviews often unverifiable</text>
+
+  <rect x="420" y="110" width="350" height="310" fill="#1D4ED8" rx="12"/>
+  <text x="595" y="140" text-anchor="middle" fill="white" font-size="15" font-weight="700">catutors.com</text>
+  <line x1="440" y1="152" x2="750" y2="152" stroke="#3B82F6" stroke-width="1"/>
+  <text x="450" y="178" fill="#BFDBFE" font-size="12">✓ 100% free for students — no fees, ever</text>
+  <text x="450" y="203" fill="#BFDBFE" font-size="12">✓ Tutors keep every dollar they earn</text>
+  <text x="450" y="228" fill="#BFDBFE" font-size="12">✓ Direct contact — no tokens, no gatekeeping</text>
+  <text x="450" y="253" fill="#BFDBFE" font-size="12">✓ Built only for California families</text>
+  <text x="450" y="278" fill="#BFDBFE" font-size="12">✓ Post a request, get matched fast</text>
+  <text x="450" y="303" fill="#BFDBFE" font-size="12">✓ No hidden subscriptions or upsells</text>
+  <text x="450" y="328" fill="#BFDBFE" font-size="12">✓ Simple signup — minutes, not days</text>
+  <text x="450" y="353" fill="#BFDBFE" font-size="12">✓ Browse by California city &amp; subject</text>
+  <text x="450" y="378" fill="#BFDBFE" font-size="12">✓ Every tutor reviewed before approval</text>
+
+  <text x="400" y="445" text-anchor="middle" fill="#1D4ED8" font-size="13" font-weight="700">catutors.com — California's free tutor directory</text>
+</svg>
