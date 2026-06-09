@@ -31,6 +31,74 @@ export type NewsPost = {
 
 export const NEWS_POSTS: NewsPost[] = [
   {
+    slug: "california-superintendent-race-2026-primary",
+    title: "California's Top School Job Is Up for Grabs: What the 2026 Superintendent Race Means for Families",
+    description:
+      "Sonja Shaw and Richard Barrera advanced to a November runoff to lead California's 10,000 public schools. Here's who they are and what their platforms mean for K-12 students.",
+    date: "June 9, 2026",
+    dateISO: "2026-06-09",
+    readTime: "5 min",
+    category: "Policy & Legislation",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "California held its primary election on June 2, 2026, and among the races on the ballot was one that will directly affect every public school student in the state: the race for Superintendent of Public Instruction. From a crowded field of ten candidates, two emerged to face off in November — Sonja Shaw and Richard Barrera.",
+      },
+      {
+        type: "h2",
+        text: "Who Are the Two Finalists?",
+      },
+      {
+        type: "p",
+        text: "Sonja Shaw led the primary with nearly 25% of votes. She is a conservative-leaning candidate who has drawn attention for her outspoken positions on parental rights, curriculum transparency, and school choice. Shaw has been a vocal critic of some of California's recent curriculum frameworks and has positioned herself as a reform candidate willing to challenge the education establishment.",
+      },
+      {
+        type: "p",
+        text: "Richard Barrera came in second with approximately 20% of the vote. A member of the San Diego Unified School District Board, Barrera ran as a progressive candidate with strong backing from the California Teachers Association and, notably, the California Charter Schools Association — an unusual coalition that united two groups that have historically been at odds. His platform centers on equity, expanded student support services, and building on the gains made by the current administration.",
+      },
+      {
+        type: "h2",
+        text: "Why This Race Matters",
+      },
+      {
+        type: "p",
+        text: "The Superintendent of Public Instruction oversees California's K-12 public education system — the largest in the United States, serving more than six million students across 1,000 school districts. The superintendent sets policy direction on curriculum standards, standardized testing, teacher credentialing, and how state education funds are prioritized. In short, whoever wins in November will have significant influence over what is taught, how students are assessed, and what support is available in classrooms across the state.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Curriculum standards — including the new K-8 Math Framework and English Language Arts guidelines",
+          "Standardized testing policy — including the future of CAASPP and any shift toward new assessments",
+          "Oversight of special education, English learner programs, and after-school funding",
+          "Direction on school choice, charter school expansion, and district accountability",
+          "Implementation of state literacy initiatives at the elementary level",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What Parents and Tutors Should Watch",
+      },
+      {
+        type: "p",
+        text: "The November contest between Shaw and Barrera represents a genuine policy divide. A Shaw win would likely bring pressure to reverse or modify recent curriculum changes — including the K-8 Math Framework — and could shift the state's approach to standardized testing. A Barrera win would signal continuity with the current direction, including the equity-focused reforms that have defined California education policy for the past several years.",
+      },
+      {
+        type: "p",
+        text: "For tutors, the stakes are practical: changes to what is tested and how math is sequenced directly affect what students need help with. For parents, the November vote is one of the most consequential education decisions California will make in 2026. The general election is November 3, 2026.",
+      },
+      {
+        type: "links",
+        label: "Find a California Tutor While Policy Shifts Happen",
+        items: [
+          { text: "Browse verified tutors in California", href: "/tutors" },
+          { text: "Math tutors in Los Angeles", href: "/los-angeles/mathematics" },
+          { text: "Post a free tuition request", href: "/request" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "california-k8-math-framework-2024",
     title: "California's New K–8 Math Framework: What It Means for Your Child",
     description:
