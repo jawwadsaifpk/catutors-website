@@ -1,0 +1,389 @@
+import type { BlogSection } from "./blog-posts";
+
+export type NewsCategory =
+  | "K-12"
+  | "Higher Education"
+  | "Standardized Tests"
+  | "District News"
+  | "Policy & Legislation"
+  | "College Admissions";
+
+export const NEWS_CATEGORIES: NewsCategory[] = [
+  "K-12",
+  "Higher Education",
+  "Standardized Tests",
+  "District News",
+  "Policy & Legislation",
+  "College Admissions",
+];
+
+export type NewsPost = {
+  slug: string;
+  title: string;
+  description: string;
+  date: string;
+  dateISO: string;
+  readTime: string;
+  category: NewsCategory;
+  region?: string;
+  sections: BlogSection[];
+};
+
+export const NEWS_POSTS: NewsPost[] = [
+  {
+    slug: "california-k8-math-framework-2024",
+    title: "California's New K–8 Math Framework: What It Means for Your Child",
+    description:
+      "California adopted a sweeping new K–8 math framework in 2023. Here's what changed, what's being debated, and how students and families can stay ahead.",
+    date: "June 5, 2026",
+    dateISO: "2026-06-05",
+    readTime: "6 min",
+    category: "K-12",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "In 2023, California adopted a new Mathematics Framework for kindergarten through grade 12 — its first major update in nearly a decade. The revision has generated both praise and controversy, touching off a statewide debate about how math should be taught and who it should serve.",
+      },
+      {
+        type: "h2",
+        text: "What Changed in the New Framework?",
+      },
+      {
+        type: "p",
+        text: "The updated framework places a stronger emphasis on conceptual understanding over rote memorization. Rather than pushing students through Algebra 1 in 8th grade as a universal benchmark, the new guidance encourages data science, statistics, and applied math pathways alongside the traditional algebra-and-calculus sequence. The goal is to reach more students — particularly those who historically dropped out of the math pipeline — by offering multiple routes to mathematical proficiency.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Emphasis on 'big ideas' that connect concepts across grade levels",
+          "Greater integration of data literacy and real-world problem solving",
+          "New elective pathways: Data Science as an alternative to Precalculus/Calculus",
+          "Reduced emphasis on tracking and acceleration in middle school",
+          "Stronger focus on equity — ensuring all students access rigorous math",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The Controversy",
+      },
+      {
+        type: "p",
+        text: "The framework has faced pushback from some university professors and parent groups who worry that de-emphasizing early algebra access will disadvantage students applying to UC and CSU campuses, which still require traditional math sequences for many STEM majors. Critics argue that replacing Precalculus with a Data Science elective — while valuable — may leave students unprepared for calculus-based college courses.",
+      },
+      {
+        type: "p",
+        text: "Proponents counter that the existing system was already failing large numbers of students, particularly in lower-income districts, by pushing an accelerated one-size-fits-all path that many couldn't sustain.",
+      },
+      {
+        type: "h2",
+        text: "What Does This Mean for Your Child?",
+      },
+      {
+        type: "p",
+        text: "Implementation varies by district — some California school districts are moving quickly to align curriculum with the new framework, while others are taking a more cautious approach. Parents should check with their child's school about how math courses will be sequenced and whether acceleration options (like taking Algebra 1 in 7th grade) are still available.",
+      },
+      {
+        type: "p",
+        text: "For students targeting STEM majors at UC or CSU, completing Calculus or at minimum Precalculus before graduation remains important. A qualified math tutor can help students stay on the traditional track, fill gaps left by curriculum transitions, or bridge into the new data science pathway if that better suits their goals.",
+      },
+      {
+        type: "links",
+        label: "Find a Math Tutor in California",
+        items: [
+          { text: "Math tutors in Los Angeles", href: "/los-angeles/mathematics" },
+          { text: "Math tutors in San Francisco", href: "/san-francisco/mathematics" },
+          { text: "Math tutors in San Diego", href: "/san-diego/mathematics" },
+          { text: "Browse all California math tutors", href: "/tutors" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "caaspp-2024-25-results-california",
+    title: "2024–25 CAASPP Results: How Is California Performing?",
+    description:
+      "California's Smarter Balanced assessment results reveal persistent gaps in math and ELA proficiency. What the numbers mean and what families can do.",
+    date: "June 3, 2026",
+    dateISO: "2026-06-03",
+    readTime: "5 min",
+    category: "K-12",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "Each year, the California Assessment of Student Performance and Progress (CAASPP) measures how well students in grades 3–8 and grade 11 are meeting state standards in English Language Arts (ELA) and Mathematics. The 2024–25 results continue to paint a mixed picture of California's K–12 education system.",
+      },
+      {
+        type: "h2",
+        text: "Key Findings from 2024–25",
+      },
+      {
+        type: "p",
+        text: "While specific 2024–25 figures are pending final CDE publication, trends from recent cycles show that roughly half of California students meet or exceed the ELA standard, while math proficiency continues to lag — typically with 35–40% of students meeting grade-level benchmarks statewide. Post-pandemic recovery has been uneven: urban districts have shown slower rebound than suburban counterparts, and learning loss in elementary math remains a documented concern. (Verify final 2024–25 percentages at caaspp.cde.ca.gov when released.)",
+      },
+      {
+        type: "h2",
+        text: "Persistent Achievement Gaps",
+      },
+      {
+        type: "ul",
+        items: [
+          "English learners: proficiency rates roughly 25–30 points below the state average",
+          "Students from low-income families: approximately 30 percentage points below non-low-income peers in math",
+          "Students with disabilities: largest gaps, often 40+ points below the overall average",
+          "African American and Hispanic students: gap-closing progress, but still significantly below Asian and White peers",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What the Test Actually Measures",
+      },
+      {
+        type: "p",
+        text: "CAASPP uses the Smarter Balanced Assessments, which test critical thinking and application rather than simple recall. Students read complex passages, analyze arguments, solve multi-step math problems, and write explanatory essays. Many students who perform well in class struggle with the format — and vice versa.",
+      },
+      {
+        type: "h2",
+        text: "How Tutoring Can Help",
+      },
+      {
+        type: "p",
+        text: "A tutor who understands the Smarter Balanced format can make a measurable difference. Unlike general homework help, targeted CAASPP prep focuses on the specific reasoning and writing skills the test rewards. If your child's CAASPP scores fell below the 'Standard Met' level, summer and fall tutoring is the most effective time to close that gap before the next school year accelerates.",
+      },
+      {
+        type: "links",
+        label: "Find a Tutor to Help With Test Prep",
+        items: [
+          { text: "English tutors in California", href: "/tutors" },
+          { text: "Math tutors near you", href: "/tutors" },
+          { text: "Post a tuition request — free", href: "/request" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "uc-csu-admissions-class-2026",
+    title: "UC and CSU Admissions Updates for Class of 2026 Applicants",
+    description:
+      "What California high school seniors need to know about UC and CSU application changes, test policy, and admissions trends for the 2025–26 cycle.",
+    date: "May 30, 2026",
+    dateISO: "2026-05-30",
+    readTime: "7 min",
+    category: "College Admissions",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "For California high school students graduating in spring 2026, the college admissions landscape has shifted significantly over the past two years. Here is what matters most heading into the application season.",
+      },
+      {
+        type: "h2",
+        text: "UC System: Test-Free Is Now Permanent",
+      },
+      {
+        type: "p",
+        text: "The University of California made its test-blind policy permanent for all campuses through at least the current application cycle. This means SAT and ACT scores will not be considered in admissions decisions — not even as optional context. The UC Regents voted to develop a new, UC-specific standardized test, but that is still in development and not in use for the Class of 2026 or 2027. For these applicants, grades, coursework rigor, personal insight questions, and extracurriculars carry the full weight.",
+      },
+      {
+        type: "h2",
+        text: "CSU System: Test-Free Through 2025 Entry",
+      },
+      {
+        type: "p",
+        text: "California State University campuses also remain test-free for Class of 2026 applicants (fall 2026 entry). However, CSU has signaled it may revisit this policy in coming years, especially for competitive programs. For now, your GPA and completion of A–G requirements are the primary academic criteria.",
+      },
+      {
+        type: "h2",
+        text: "What's Getting More Competitive",
+      },
+      {
+        type: "ul",
+        items: [
+          "UCLA, UC Berkeley, and UC San Diego continue to see record application numbers — admit rates at these flagships are at historic lows",
+          "UC Santa Barbara, UC Davis, and UC Irvine have seen large increases in applications from out-of-state and international students",
+          "CSU Cal Poly SLO and SDSU remain highly selective for many majors",
+          "Impacted programs (nursing, business, CS, engineering) have additional requirements at most CSU campuses",
+        ],
+      },
+      {
+        type: "h2",
+        text: "A–G Requirements: Still Non-Negotiable",
+      },
+      {
+        type: "p",
+        text: "Both UC and CSU require completion of 15 college-preparatory A–G courses with a C or better (and ideally a B or better for competitive applicants). The most commonly missed requirement is the two years of laboratory science. Students should verify their A–G completion with their school counselor no later than junior year.",
+      },
+      {
+        type: "h2",
+        text: "Personal Insight Questions (UC PIQs)",
+      },
+      {
+        type: "p",
+        text: "UC applicants answer four of eight Personal Insight Questions, 350 words each. These have replaced the traditional personal statement and are the primary way applicants distinguish themselves. Strong PIQ writing is specific, reflective, and honest — not a resume summary. Many students benefit from a writing tutor or academic coach to refine their responses.",
+      },
+      {
+        type: "links",
+        label: "Prepare for College Applications with a Tutor",
+        items: [
+          { text: "Find an SAT/ACT prep tutor", href: "/tutors" },
+          { text: "Academic writing tutors in California", href: "/tutors" },
+          { text: "Post a tuition request", href: "/request" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "lausd-budget-after-school-tutoring-2025",
+    title: "How LAUSD's Latest Budget Affects After-School and Tutoring Programs",
+    description:
+      "Los Angeles Unified School District faces budget pressure in 2025. Here's what that means for after-school programs, tutoring support, and families who rely on them.",
+    date: "May 25, 2026",
+    dateISO: "2026-05-25",
+    readTime: "5 min",
+    category: "District News",
+    region: "Los Angeles",
+    sections: [
+      {
+        type: "p",
+        text: "Los Angeles Unified School District — the second-largest school district in the United States with over 560,000 students — is navigating a difficult budget period. Declining enrollment, the end of one-time federal pandemic relief funds (ESSER), and rising pension costs have created a structural deficit that is forcing difficult trade-offs.",
+      },
+      {
+        type: "h2",
+        text: "What's Being Cut or Reduced",
+      },
+      {
+        type: "p",
+        text: "LAUSD's budget proposals for 2025–26 have included reductions to supplemental academic support programs, including some after-school tutoring initiatives funded through ESSER money that is now exhausted. Programs that expanded during COVID recovery — including expanded tutoring staffing at high-need schools — are among those facing cuts. The district has emphasized it is trying to protect core classroom instruction, but enrichment and intervention programs are at higher risk.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Some after-school academic intervention programs reduced in scope",
+          "ESSER-funded tutoring positions not renewed in several schools",
+          "Library hours and instructional aide positions reduced at some campuses",
+          "Community schools funding under review for the 2026–27 cycle",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What's Being Protected",
+      },
+      {
+        type: "p",
+        text: "LAUSD has committed to maintaining its expanded transitional kindergarten (TK) program, mental health counselors added post-pandemic, and core special education services. The district is also preserving funding for its Early Literacy Initiative, recognizing that 3rd-grade reading proficiency is a key predictor of long-term academic outcomes.",
+      },
+      {
+        type: "h2",
+        text: "What This Means for Families",
+      },
+      {
+        type: "p",
+        text: "For families in LAUSD who have relied on free or subsidized after-school tutoring programs, the reduction in district-provided support means they may need to look at alternatives. Private tutors remain the most flexible option — many LAUSD-area tutors are credentialed teachers or graduate students who offer competitive rates and can tailor sessions to district curriculum standards.",
+      },
+      {
+        type: "p",
+        text: "If your child attended an LAUSD school that had a tutoring program reduced or eliminated, connecting directly with an independent tutor is a practical next step. catutors.com lists verified tutors across the LA metro area — all contacts are free and direct.",
+      },
+      {
+        type: "links",
+        label: "Find a Tutor in the Los Angeles Area",
+        items: [
+          { text: "Tutors in Los Angeles", href: "/los-angeles" },
+          { text: "Math tutors in Los Angeles", href: "/los-angeles/mathematics" },
+          { text: "English tutors in Los Angeles", href: "/los-angeles/english" },
+          { text: "Post a free tuition request", href: "/request" },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "sat-vs-act-california-2025",
+    title: "SAT vs ACT in California: Which Test Should Your Child Take in 2025?",
+    description:
+      "With the UC system test-blind and CSUs test-free, do SAT and ACT scores still matter for California students? Here's the practical answer for 2025 applicants.",
+    date: "May 20, 2026",
+    dateISO: "2026-05-20",
+    readTime: "6 min",
+    category: "Standardized Tests",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "California's two major public university systems — UC and CSU — no longer consider SAT or ACT scores for admissions. So do standardized tests still matter for California high school students? The answer is: it depends on where you're applying.",
+      },
+      {
+        type: "h2",
+        text: "UC and CSU: Test-Blind/Test-Free",
+      },
+      {
+        type: "p",
+        text: "The University of California is fully test-blind through at least the 2025–26 admissions cycle — SAT/ACT scores are not submitted and not considered. The California State University system is test-free for undergraduate admissions. For students applying only to CA public universities, test prep may not be a priority.",
+      },
+      {
+        type: "h2",
+        text: "Private Colleges and Out-of-State Schools",
+      },
+      {
+        type: "p",
+        text: "Most private colleges — including Stanford, USC, and Caltech — and the majority of out-of-state public universities have returned to test-optional or test-required policies. Stanford and MIT require SAT or ACT scores. USC is test-optional. If your student is considering any private college or out-of-state school, taking the SAT or ACT is still advisable.",
+      },
+      {
+        type: "h2",
+        text: "SAT vs ACT: The Structural Differences",
+      },
+      {
+        type: "ul",
+        items: [
+          "SAT (Digital): 2-hour 14-minute exam, adaptive format, strong reading/writing component, calculator allowed throughout math",
+          "ACT: 2 hours 55 minutes, fixed format, includes a separate Science section, slightly more time pressure",
+          "SAT math focuses more on algebra and advanced math; ACT math covers more topics including trigonometry",
+          "The digital SAT (launched 2024) is significantly shorter and uses adaptive difficulty — many students find it less fatiguing",
+          "Both are accepted equally by virtually all US colleges that require testing",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Which Test Is Better for California Students?",
+      },
+      {
+        type: "p",
+        text: "There is no single answer — the right test depends on the student's strengths. Students who are strong readers and prefer a more reasoning-based math section often score better on the SAT. Students who are fast workers and comfortable with a science data-interpretation section often prefer the ACT. The best approach is to take a full-length practice test for both and compare the results.",
+      },
+      {
+        type: "h2",
+        text: "When to Start Prep",
+      },
+      {
+        type: "p",
+        text: "Most college counselors recommend beginning test prep in the spring of junior year, targeting a summer or early fall test date. A focused 8–12 week prep period with a qualified tutor — covering strategy, timing, and content gaps — is typically more effective than self-study alone. California students applying to any college outside the UC/CSU system should not treat test prep as optional.",
+      },
+      {
+        type: "links",
+        label: "Find an SAT or ACT Prep Tutor in California",
+        items: [
+          { text: "SAT prep tutors in Los Angeles", href: "/los-angeles/sat-prep" },
+          { text: "SAT prep tutors in San Francisco", href: "/san-francisco/sat-prep" },
+          { text: "SAT prep tutors in San Diego", href: "/san-diego/sat-prep" },
+          { text: "Browse all test prep tutors", href: "/tutors" },
+        ],
+      },
+    ],
+  },
+];
+
+export function getAllNews(): NewsPost[] {
+  return [...NEWS_POSTS].sort((a, b) => b.dateISO.localeCompare(a.dateISO));
+}
+
+export function getNewsBySlug(slug: string): NewsPost | undefined {
+  return NEWS_POSTS.find((p) => p.slug === slug);
+}
+
+export function getRelatedNews(current: NewsPost, limit = 3): NewsPost[] {
+  return NEWS_POSTS.filter(
+    (p) => p.slug !== current.slug && p.category === current.category
+  )
+    .sort((a, b) => b.dateISO.localeCompare(a.dateISO))
+    .slice(0, limit);
+}

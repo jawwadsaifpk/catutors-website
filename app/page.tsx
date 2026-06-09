@@ -5,6 +5,7 @@ import TutorCard from "@/components/TutorCard";
 import SearchBar from "@/components/SearchBar";
 import Footer from "@/components/Footer";
 import { CA_CITIES } from "@/lib/cities";
+import { getAllNews } from "@/lib/news-posts";
 
 function timeAgo(date: Date): string {
   const seconds = Math.floor((Date.now() - date.getTime()) / 1000);
@@ -352,6 +353,42 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
         </div>
       </div>
+
+      {/* Latest California Education News */}
+      {(() => {
+        const latestNews = getAllNews().slice(0, 3);
+        return (
+          <div className="max-w-5xl mx-auto px-4 py-14">
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <p className="text-xs font-bold tracking-widest uppercase text-blue-500 mb-1">California Education</p>
+                <h2 className="text-2xl font-extrabold text-gray-900">Latest News & Updates</h2>
+              </div>
+              <Link href="/news" className="text-blue-600 text-sm font-medium hover:underline hidden sm:block">
+                View all →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {latestNews.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/news/${post.slug}`}
+                  className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 hover:shadow-md hover:-translate-y-1 transition-all duration-200"
+                >
+                  <p className="text-xs font-semibold text-blue-600 mb-2">{post.category}</p>
+                  <h3 className="text-sm font-bold text-gray-900 mb-2 line-clamp-2">{post.title}</h3>
+                  <p className="text-xs text-gray-400">{post.date}</p>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-4 sm:hidden text-center">
+              <Link href="/news" className="text-blue-600 text-sm font-medium hover:underline">
+                View all California education news →
+              </Link>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* FAQ */}
       <div className="max-w-3xl mx-auto px-4 py-16">

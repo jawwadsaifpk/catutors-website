@@ -13,6 +13,9 @@ export default async function NavLinks() {
         <Link href="/jobs" className="px-3 py-2 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors">
           Tutor Jobs
         </Link>
+        <Link href="/news" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">
+          CA News
+        </Link>
         <Link href="/blog" className="text-gray-600 hover:text-blue-600 transition-colors font-medium">
           Blog
         </Link>

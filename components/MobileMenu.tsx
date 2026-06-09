@@ -21,6 +21,9 @@ export default function MobileMenu({ hasTutor }: { hasTutor: boolean }) {
           <Link href="/jobs" onClick={close} className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
             Tutor Jobs
           </Link>
+          <Link href="/news" onClick={close} className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+            CA News
+          </Link>
           <Link href="/blog" onClick={close} className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
             Blog
           </Link>

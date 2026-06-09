@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { BLOG_POSTS } from "@/lib/blog-posts";
+import { NEWS_POSTS } from "@/lib/news-posts";
 import { CA_CITIES } from "@/lib/cities";
 import { ALL_SUBJECTS } from "@/lib/subjects";
 
@@ -29,6 +30,7 @@ export async function GET() {
     urlTag(`${BASE_URL}/register`,     { lastmod: now, changefreq: "monthly", priority: 0.7 }),
     urlTag(`${BASE_URL}/request`,      { lastmod: now, changefreq: "monthly", priority: 0.7 }),
     urlTag(`${BASE_URL}/blog`,         { lastmod: now, changefreq: "weekly",  priority: 0.7 }),
+    urlTag(`${BASE_URL}/news`,         { lastmod: now, changefreq: "weekly",  priority: 0.8 }),
     urlTag(`${BASE_URL}/about`,        { lastmod: now, changefreq: "monthly", priority: 0.6 }),
     urlTag(`${BASE_URL}/how-it-works`, { lastmod: now, changefreq: "monthly", priority: 0.6 }),
     urlTag(`${BASE_URL}/faq`,          { lastmod: now, changefreq: "monthly", priority: 0.6 }),
@@ -55,6 +57,10 @@ export async function GET() {
     urlTag(`${BASE_URL}/blog/${post.slug}`, { lastmod: post.date, changefreq: "monthly", priority: 0.6 })
   );
 
+  const newsUrls = NEWS_POSTS.map((post) =>
+    urlTag(`${BASE_URL}/news/${post.slug}`, { lastmod: post.dateISO, changefreq: "monthly", priority: 0.7 })
+  );
+
   // Individual approved tutor profiles
   const allTutors = await db.tutor.findMany({
     where: { status: "approved" },
@@ -67,7 +73,7 @@ export async function GET() {
   const xml = [
     `<?xml version="1.0" encoding="UTF-8"?>`,
     `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`,
-    ...staticUrls, ...cityUrls, ...citySubjectUrls, ...blogUrls, ...tutorUrls,
+    ...staticUrls, ...cityUrls, ...citySubjectUrls, ...blogUrls, ...newsUrls, ...tutorUrls,
     `</urlset>`,
   ].join("\n");
 
