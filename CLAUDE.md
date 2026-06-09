@@ -62,3 +62,40 @@ npm run stop      # kill node process
 - dynamic route params/searchParams are Promises — always `await` them
 - Never use a library not in package.json without asking
 - No comments unless the WHY is non-obvious
+
+## Publishing News Articles ("write today's news and publish")
+
+When the user says anything like "write today's news", "publish news", "add a news article", follow these steps in order:
+
+### Step 1 — Search the web
+Use WebSearch to find California education news published in the last 7 days. Run 2–3 searches:
+- `California education news [current month year]`
+- `California K-12 school news this week`
+- `LAUSD UC CSU California education update [current year]`
+
+Pick the **single most newsworthy, factual story** not already covered in `lib/news-posts.ts` (check existing slugs). Tell the user which story you picked before writing.
+
+### Step 2 — Write the article
+Write 400–600 words as a `NewsPost` object. Rules:
+- `slug`: unique kebab-case, not already in NEWS_POSTS
+- `date`: today's date as "Month D, YYYY"
+- `dateISO`: today's date as "YYYY-MM-DD"
+- `readTime`: "4 min" for ~400w, "6 min" for ~600w
+- `category`: exactly one of — `"K-12"` | `"Higher Education"` | `"Standardized Tests"` | `"District News"` | `"Policy & Legislation"` | `"College Admissions"`
+- `region`: optional — `"Statewide"` | `"Los Angeles"` | `"San Francisco"` | `"San Diego"` | `"Sacramento"` | other CA city
+- `sections`: use `h2`, `p`, `ul`, `links` types from `BlogSection`
+- Last section must be a `links` block bridging to tutoring (e.g. href `/los-angeles/mathematics`, `/tutors`, `/request`)
+- Do not invent statistics — attribute uncertain figures to their source
+
+### Step 3 — Prepend to lib/news-posts.ts
+Add the new object at the **top** of the `NEWS_POSTS` array (index 0) so it appears first on /news.
+
+### Step 4 — Commit and push
+```
+git add lib/news-posts.ts
+git commit -m "Add news: <slug>"
+git push origin master
+```
+
+### Step 5 — Confirm
+Tell the user the article title, slug, and live URL: `https://catutors.com/news/<slug>`. Vercel deploys in ~1–2 minutes.
