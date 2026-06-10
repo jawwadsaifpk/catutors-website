@@ -20,6 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getNewsBySlug(slug);
   if (!post) return { title: "Article Not Found" };
+  const ogImage = `https://www.catutors.com/api/og?title=${encodeURIComponent(post.title)}&description=${encodeURIComponent(post.description)}`;
+
   return {
     title: `${post.title} | catutors.com`,
     description: post.description,
@@ -32,11 +34,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.dateISO,
       authors: ["CATutors Editorial Team"],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: [ogImage],
     },
   };
 }

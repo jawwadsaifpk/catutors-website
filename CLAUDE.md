@@ -73,7 +73,13 @@ Use WebSearch to find California education news published in the last 7 days. Ru
 - `California K-12 school news this week`
 - `LAUSD UC CSU California education update [current year]`
 
-Pick the **single most newsworthy, factual story** not already covered in `lib/news-posts.ts` (check existing slugs). Tell the user which story you picked before writing.
+Pick the **single most newsworthy, factual story** not already covered. Check existing slugs in the memory file `news-slugs.md` — do NOT read `lib/news-posts.ts` to check slugs. Tell the user which story you picked before writing.
+
+### Social Sharing
+Every news article page automatically shows sharing buttons for X (Twitter), Facebook, LinkedIn, and WhatsApp — built into `app/news/[slug]/page.tsx` as the `ShareButtons` component. No action needed when writing articles; sharing is handled at the page level.
+
+### Social Preview Meta Tags (OG / Twitter Card)
+Article pages generate per-article OG images via `/api/og?title=...&description=...`. The `generateMetadata` function in `app/news/[slug]/page.tsx` sets both `openGraph.images` and `twitter.images` using this dynamic URL so every social platform (Twitter/X, Facebook, LinkedIn, WhatsApp) shows the correct article title and description — not the homepage. **Do not remove the `images` field from `openGraph` or `twitter` in article metadata.** If social previews ever show the wrong page, the most likely cause is a missing `images` array in one of those blocks.
 
 ### Step 2 — Write the article
 Write 400–600 words as a `NewsPost` object. Rules:
@@ -84,11 +90,14 @@ Write 400–600 words as a `NewsPost` object. Rules:
 - `category`: exactly one of — `"K-12"` | `"Higher Education"` | `"Standardized Tests"` | `"District News"` | `"Policy & Legislation"` | `"College Admissions"`
 - `region`: optional — `"Statewide"` | `"Los Angeles"` | `"San Francisco"` | `"San Diego"` | `"Sacramento"` | other CA city
 - `sections`: use `h2`, `p`, `ul`, `links` types from `BlogSection`
+- **`links` section exact shape** — `{ type: "links", label: string, items: { text: string, href: string }[] }`. Do NOT use `title`, `links`, or `label` inside items — it's always `text`.
 - Last section must be a `links` block bridging to tutoring (e.g. href `/los-angeles/mathematics`, `/tutors`, `/request`)
 - Do not invent statistics — attribute uncertain figures to their source
 
 ### Step 3 — Prepend to lib/news-posts.ts
 Add the new object at the **top** of the `NEWS_POSTS` array (index 0) so it appears first on /news.
+
+Also prepend the new slug (with date) to the top of `~/.claude/projects/C--Users-Lenovo-Documents-catutors/memory/news-slugs.md` — this keeps the slug list current so future sessions never need to read the full `news-posts.ts` file.
 
 ### Step 4 — Commit and push
 ```
