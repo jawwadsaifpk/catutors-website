@@ -31,6 +31,80 @@ export type NewsPost = {
 
 export const NEWS_POSTS: NewsPost[] = [
   {
+    slug: "california-special-education-funding-2026-27-boost",
+    title: "California Proposes $2.4 Billion Special Education Boost — A 43% Increase Over Last Year",
+    description:
+      "Governor Newsom's revised 2026-27 budget includes a $2.4 billion increase for special education — the largest single-year boost in recent memory. But $3.9 billion in school funding remains withheld, keeping educators on edge.",
+    date: "June 10, 2026",
+    dateISO: "2026-06-10",
+    readTime: "5 min",
+    category: "Policy & Legislation",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "California's 2026-27 budget proposal includes a $2.4 billion increase for special education — a 43% jump over the prior year — according to EdSource. The boost comes as part of Governor Gavin Newsom's May budget revision, which added $1.8 billion to the $509 million he had already proposed for students with disabilities. If enacted, it would represent the single largest increase in California special education funding in recent memory.",
+      },
+      {
+        type: "h2",
+        text: "Why Special Education Is Getting a Major Infusion",
+      },
+      {
+        type: "p",
+        text: "California school districts have long argued that state special education funding has failed to keep pace with rising costs — including legal services, specialized staff, and individualized education program (IEP) requirements. Many districts have been forced to divert general education dollars to cover the gap, a practice sometimes called the 'special education tax' on school budgets. The proposed increase signals that the state is responding to years of advocacy from disability rights groups, parent organizations, and district administrators.",
+      },
+      {
+        type: "p",
+        text: "According to EdSource, the additional funding is tied to Newsom's broader May revision, which projects a record $127.1 billion in Proposition 98 funding for TK-12 schools and community colleges — driven by a surge in state tax revenues.",
+      },
+      {
+        type: "h2",
+        text: "The Catch: $3.9 Billion Remains Withheld",
+      },
+      {
+        type: "p",
+        text: "Despite the headline numbers, education leaders have a significant complaint: Newsom is still withholding $3.9 billion in school funds until early next year, when the next governor can reassess the state's finances. Only $1.7 billion of a larger pot is being released now. School organizations were blunt in their reaction.",
+      },
+      {
+        type: "ul",
+        items: [
+          "\"ACSA rejects the Administration's proposal, as these funds belong in classrooms supporting students,\" said Edgar Zazueta, executive director of the Association of California School Administrators.",
+          "CTA President David Goldberg warned that withholding the funds \"causes serious harm to public schools\" — leading to overcrowded, under-resourced classrooms.",
+          "Some district leaders said the uncertainty makes it impossible to finalize hiring plans or avoid mid-year layoffs.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What This Means for Students With Disabilities",
+      },
+      {
+        type: "p",
+        text: "If the full $2.4 billion increase passes the legislature and is signed into law, districts could hire more special education teachers, speech therapists, occupational therapists, and behavioral support staff. Waitlists for IEP-related services have grown in many California districts, and the funding could help reduce delays. However, final passage requires agreement between Newsom and the legislature by June 15, the constitutional budget deadline.",
+      },
+      {
+        type: "h2",
+        text: "What Comes Next",
+      },
+      {
+        type: "p",
+        text: "Budget negotiations are entering their final stretch. Legislators and the governor must reach a deal by June 15. Education advocates are pushing to have the withheld $3.9 billion released immediately rather than deferred. Watch for announcements from the California Department of Finance and the Legislative Analyst's Office in the coming days.",
+      },
+      {
+        type: "p",
+        text: "For families of students with disabilities, a tutor who specializes in IEP support, learning differences, or assistive communication can make a significant difference — especially during summer when school services pause.",
+      },
+      {
+        type: "links",
+        label: "Find a Tutor in California",
+        items: [
+          { text: "Browse tutors by subject", href: "/tutors" },
+          { text: "Post a tutoring request", href: "/request" },
+          { text: "Find tutors in Los Angeles", href: "/los-angeles" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "california-school-budget-2026-27-record-funding",
     title: "California Schools Set to Receive Record $127 Billion — What It Means for Students",
     description:
