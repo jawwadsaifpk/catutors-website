@@ -100,11 +100,11 @@ export const NEWS_POSTS: NewsPost[] = [
       },
       {
         type: "links",
-        title: "Find a Tutor in California",
-        links: [
-          { href: "/tutors", label: "Browse all California tutors" },
-          { href: "/los-angeles/mathematics", label: "Math tutors in Los Angeles" },
-          { href: "/request", label: "Post a free tuition request" },
+        label: "Find a tutor in California:",
+        items: [
+          { text: "Browse all California tutors", href: "/tutors" },
+          { text: "Math tutors in Los Angeles", href: "/los-angeles/mathematics" },
+          { text: "Post a free tuition request", href: "/request" },
         ],
       },
     ],
