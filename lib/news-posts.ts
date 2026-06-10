@@ -31,6 +31,76 @@ export type NewsPost = {
 
 export const NEWS_POSTS: NewsPost[] = [
   {
+    slug: "california-phone-free-school-act-july-2026",
+    title: "California's Phone-Free School Act Takes Effect July 1 — What Every Family Needs to Know",
+    description:
+      "Every California school district must have a smartphone restriction policy in place by July 1, 2026. Here's what the law requires, how districts are responding, and what it means for students heading into the 2026-27 school year.",
+    date: "June 10, 2026",
+    dateISO: "2026-06-10",
+    readTime: "5 min",
+    category: "K-12",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "With the school year winding down, California families returning in August will find a different classroom environment: smartphones will be restricted — or banned entirely — for every student in the state. Under Assembly Bill 3216, the Phone-Free School Act signed by Governor Gavin Newsom in September 2024, every public school district, charter school, and county office of education must adopt a smartphone restriction policy by July 1, 2026.",
+      },
+      {
+        type: "h2",
+        text: "What the Law Requires",
+      },
+      {
+        type: "p",
+        text: "The law does not mandate a single approach. Districts must choose one of two paths: limit smartphone use to designated times and locations, or prohibit phones entirely during the school day. The policy must be developed with input from students, parents, and educators, and must include provisions for emergencies — students can always use a phone if there is a perceived threat to safety, or if permitted by a teacher, administrator, or doctor. Students with an individualized education program (IEP) may also have exceptions built into their plan.",
+      },
+      {
+        type: "h2",
+        text: "How Districts Are Responding",
+      },
+      {
+        type: "p",
+        text: "California's roughly 1,000 school districts have taken varied approaches. Some — including several large urban districts — have moved to full-day bans using pouches or locked storage. Others are adopting bell-to-bell restrictions that allow phones in hallways between classes but not in classrooms. A number of districts have been using Yondr pouches, magnetic locking cases students carry but cannot open during the school day.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Full ban: phones stored at the front office or in locked pouches for the entire school day.",
+          "Classroom-only restriction: phones must be put away during instructional time but may be used during lunch or passing periods.",
+          "Grade-level tiered policies: stricter rules for middle schoolers, more flexibility for high school seniors.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The Research Behind the Push",
+      },
+      {
+        type: "p",
+        text: "California's move follows a growing body of research linking constant smartphone access to declining attention spans, increased anxiety, and lower academic performance — particularly in middle school students. A 2023 UNESCO report recommended phone-free schools globally. Governor Newsom cited concerns about social media's impact on youth mental health when signing the bill, and noted that schools that had already gone phone-free reported improvements in both learning and student wellbeing.",
+      },
+      {
+        type: "h2",
+        text: "What Parents Should Do Now",
+      },
+      {
+        type: "p",
+        text: "The new school year begins in late July or August for most California districts. Before then, parents should check their district's website for the specific policy — rules vary significantly between schools. Students who rely on their phone as a medical device or for disability-related accommodations should work with their school's IEP or 504 coordinator now to ensure their needs are documented before fall.",
+      },
+      {
+        type: "p",
+        text: "For families looking to use the summer productively, the phone-free transition is a natural moment to build focused study habits. A tutor who works one-on-one — without the distraction of a screen — can help students strengthen skills before the new year starts.",
+      },
+      {
+        type: "links",
+        label: "Find a Tutor in California",
+        items: [
+          { text: "Browse all California tutors", href: "/tutors" },
+          { text: "Post a free tutoring request", href: "/request" },
+          { text: "Find tutors in San Diego", href: "/san-diego" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "california-special-education-funding-2026-27-boost",
     title: "California Proposes $2.4 Billion Special Education Boost — A 43% Increase Over Last Year",
     description:
