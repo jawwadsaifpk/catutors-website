@@ -31,6 +31,85 @@ export type NewsPost = {
 
 export const NEWS_POSTS: NewsPost[] = [
   {
+    slug: "california-school-budget-2026-27-record-funding",
+    title: "California Schools Set to Receive Record $127 Billion — What It Means for Students",
+    description:
+      "Governor Newsom's revised 2026-27 budget proposes a record $127.1 billion in Prop 98 funding for TK-12 schools and community colleges, pushing per-pupil spending to $21,013. Here's what changed and what the catch is.",
+    date: "June 10, 2026",
+    dateISO: "2026-06-10",
+    readTime: "5 min",
+    category: "Policy & Legislation",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "California schools are on track for the largest education budget in state history. Governor Gavin Newsom's May budget revision proposes $127.1 billion in Proposition 98 funding for TK-12 schools and community colleges in 2026-27 — a figure $24.3 billion higher than what was appropriated for 2025-26. Per-pupil funding from the state would rise to a record $21,013, with total per-student spending including federal and other sources reaching $28,282.",
+      },
+      {
+        type: "h2",
+        text: "Where the Money Comes From",
+      },
+      {
+        type: "p",
+        text: "Proposition 98, passed by California voters in 1988, requires roughly 40% of the state's general fund to flow to education. This year, unexpectedly strong state revenues — fueled by a surge in capital gains and income tax receipts — pushed the Prop 98 guarantee far above earlier projections. The $12.5 billion in new ongoing funding is particularly significant because it sets a higher baseline for future years, locking in much of the increase permanently.",
+      },
+      {
+        type: "h2",
+        text: "Key Priorities in the Proposal",
+      },
+      {
+        type: "p",
+        text: "Newsom's revised plan targets the windfall at priorities school leaders had been pushing for since the beginning of the budget cycle:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Cost-of-living adjustment raised from 2.87% to 4.31%, giving districts more room to cover rising labor costs",
+          "Billions in additional annual funding for special education, addressing one of the most persistent funding gaps in the system",
+          "A one-time discretionary block grant giving districts flexibility to address local needs — from tutoring programs to facilities repairs",
+          "Continued investment in community schools, which provide wraparound health, mental health, and family services on campus",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The Catch: $3.9 Billion Withheld",
+      },
+      {
+        type: "p",
+        text: "Despite the headlines, education leaders have mixed feelings. While the $127.1 billion figure is historic, Newsom's proposal includes a significant caveat: $3.9 billion that schools were expecting will be held back until early 2027, when the next governor can reassess. Only $1.7 billion of the withheld portion is included in the current allocation. School district superintendents and the California Teachers Association have called on the Legislature to release the full amount, arguing that districts need certainty to plan staffing, programs, and contracts.",
+      },
+      {
+        type: "h2",
+        text: "Why Districts Are Still Struggling Locally",
+      },
+      {
+        type: "p",
+        text: "Record state numbers do not always translate into relief at the district level. Enrollment across California has been declining for years, and per-pupil formulas mean fewer students equals less money even when the overall pot grows. Several Southern California districts — including some in the Los Angeles region — have warned of potential layoffs and program cuts due to shrinking enrollment and rising pension and healthcare costs. The 4.31% COLA helps, but it still may not fully cover the cost increases many districts are experiencing.",
+      },
+      {
+        type: "h2",
+        text: "What Comes Next",
+      },
+      {
+        type: "p",
+        text: "The Legislature must pass a final budget by June 15 under the state constitution. Negotiations between Newsom and legislative leaders are ongoing, with education advocates pushing to unlock the withheld $3.9 billion. The final budget deal will shape school staffing, class sizes, and program availability for the 2026-27 school year — affecting roughly six million K-12 students statewide.",
+      },
+      {
+        type: "p",
+        text: "For families navigating an uncertain school environment — whether due to program cuts, larger class sizes, or shifting resource priorities — supplemental tutoring can help fill the gap. One-on-one instruction gives students the focused attention that crowded classrooms sometimes cannot provide.",
+      },
+      {
+        type: "links",
+        title: "Find a Tutor in California",
+        links: [
+          { href: "/tutors", label: "Browse all California tutors" },
+          { href: "/los-angeles/mathematics", label: "Math tutors in Los Angeles" },
+          { href: "/request", label: "Post a free tuition request" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "california-superintendent-race-2026-primary",
     title: "California's Top School Job Is Up for Grabs: What the 2026 Superintendent Race Means for Families",
     description:
