@@ -33,6 +33,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.dateISO,
       authors: ["CATutors Editorial Team"],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+    },
   };
 }
 
