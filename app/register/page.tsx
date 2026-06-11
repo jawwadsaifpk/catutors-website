@@ -83,6 +83,36 @@ export default async function RegisterPage({ searchParams }: RegisterPageProps) 
       <div className="bg-gray-50 py-12 px-4">
         <div className="max-w-3xl mx-auto flex flex-col gap-6">
 
+          {/* Before You Apply — FAQ */}
+          <SectionCard>
+            <SectionHeader title="Before You Apply" subtitle="Common questions from tutors joining catutors.com" />
+            <dl className="flex flex-col gap-5">
+              {[
+                {
+                  q: "Are tutors employees or independent contractors?",
+                  a: "Tutors on catutors.com are independent contractors, not employees. You work for yourself — you set your own schedule, rates, and decide which students to work with. catutors.com is a free directory that connects you with students; we are not your employer.",
+                },
+                {
+                  q: "Are benefits (medical, vision, dental) provided?",
+                  a: "No. Because tutors are independent contractors, no employment benefits are offered. You are responsible for your own insurance and taxes.",
+                },
+                {
+                  q: "What qualifications do I need?",
+                  a: "There are no mandatory degree requirements. What matters most is relevant experience and strong subject knowledge. Special education experience, teaching credentials, tutoring history, or subject-area expertise all strengthen your profile. You describe your background in the bio field — students and parents read it before reaching out.",
+                },
+                {
+                  q: "How do I apply?",
+                  a: "Fill in the form below and submit. Applications are reviewed within 24 hours. Once approved, your profile goes live and students can contact you directly — no middleman, no tokens, no fees.",
+                },
+              ].map(({ q, a }) => (
+                <div key={q} className="border-b border-gray-100 last:border-0 pb-5 last:pb-0">
+                  <dt className="text-sm font-bold text-gray-900 mb-1">{q}</dt>
+                  <dd className="text-sm text-gray-600 leading-relaxed">{a}</dd>
+                </div>
+              ))}
+            </dl>
+          </SectionCard>
+
           {error === "missing-fields" && (
             <div className="flex items-start gap-3 p-4 bg-red-50 border border-red-200 rounded-xl text-red-700 text-sm">
               <span className="text-base shrink-0">✕</span>
