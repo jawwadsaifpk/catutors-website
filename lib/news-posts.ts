@@ -31,6 +31,77 @@ export type NewsPost = {
 
 export const NEWS_POSTS: NewsPost[] = [
   {
+    slug: "newsom-revised-budget-california-schools-2026-27-prop98",
+    title: "California Schools Eye Record Funding in Newsom's Revised Budget — But $3.9 Billion Is Still Withheld",
+    description:
+      "Governor Newsom's May Revision would push Prop 98 education funding to a record $127.1 billion for 2026-27, but a $3.9 billion holdback has the California Teachers Association threatening legal action.",
+    date: "June 11, 2026",
+    dateISO: "2026-06-11",
+    readTime: "5 min",
+    category: "Policy & Legislation",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "California school districts are watching Sacramento closely this month as Governor Gavin Newsom's revised state budget — known as the May Revision — works its way through the Legislature. The proposal contains welcome news for educators: Proposition 98 funding for TK-12 schools and community colleges would reach a record $127.1 billion in 2026-27, pushing per-pupil spending to an all-time high of $21,013 — according to EdSource.",
+      },
+      {
+        type: "h2",
+        text: "What Is Proposition 98 — and Why Does It Matter?",
+      },
+      {
+        type: "p",
+        text: "Proposition 98, passed by voters in 1988, requires the state to direct roughly 40 percent of its general fund to TK-12 education and community colleges. Because the formula ties school funding to state revenue, the recent surge in California tax collections has unlocked billions in new dollars. The revised Prop 98 figure for 2026-27 would be $24.3 billion higher than what the Legislature appropriated for 2025-26, with $12.5 billion of that as ongoing, structural funding.",
+      },
+      {
+        type: "h2",
+        text: "Key Proposals in the May Revision",
+      },
+      {
+        type: "ul",
+        items: [
+          "A higher cost-of-living adjustment (COLA) for school districts, which also funds a new requirement for up to 14 weeks of paid pregnancy disability leave for TK-12 and community college employees starting in 2026-27.",
+          "Billions of dollars more annually for special education — a long-standing funding gap that advocacy groups have pressed the state to close.",
+          "A one-time discretionary block grant that districts could spend on local priorities such as facilities, staffing, or academic support programs.",
+          "Per-pupil base funding rising to a record $21,013, according to the Department of Finance.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The Catch: $3.9 Billion on Hold",
+      },
+      {
+        type: "p",
+        text: "Despite the headline numbers, a significant dispute is unresolved. Newsom has proposed withholding $3.9 billion in constitutionally guaranteed Prop 98 funding until early 2027, when the administration says it will have greater certainty that projected revenues have actually materialized. In his January budget, the holdback was even larger — $5.6 billion — but the May Revision reduced it after stronger-than-expected tax receipts.",
+      },
+      {
+        type: "p",
+        text: "School advocates are not satisfied. The California Teachers Association (CTA) and the California School Boards Association have both threatened to sue the state, arguing that Prop 98 is a voter-approved constitutional guarantee and that the governor cannot legally delay its distribution. The dispute is likely to carry into budget negotiations between the governor and Legislature, with a deadline of June 15 for a balanced budget agreement.",
+      },
+      {
+        type: "h2",
+        text: "What This Could Mean for Students and Families",
+      },
+      {
+        type: "p",
+        text: "If the full Prop 98 allocation reaches districts on time, school leaders say the money could restore programs cut in leaner years — including tutoring support, intervention specialists, and expanded after-school offerings. For families whose students are behind grade level, the prospect of better-resourced schools is significant. However, districts are cautious about hiring or committing to multi-year programs until the legal and budget uncertainty is resolved.",
+      },
+      {
+        type: "p",
+        text: "In the meantime, many parents are turning to private and community tutors to fill academic gaps, particularly in math and reading, while waiting to see how district budgets take shape for the coming school year.",
+      },
+      {
+        type: "links",
+        label: "Find a Tutor in California",
+        items: [
+          { text: "Browse all California tutors", href: "/tutors" },
+          { text: "Post a free tutoring request", href: "/request" },
+          { text: "Find a math tutor near you", href: "/los-angeles/mathematics" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "california-k12-governance-reform-pace-report-2026",
     title: "Major Study Calls for Stronger State Oversight of California's K-12 Schools",
     description:
