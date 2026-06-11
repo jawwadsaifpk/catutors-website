@@ -31,6 +31,84 @@ export type NewsPost = {
 
 export const NEWS_POSTS: NewsPost[] = [
   {
+    slug: "california-k12-governance-reform-pace-report-2026",
+    title: "Major Study Calls for Stronger State Oversight of California's K-12 Schools",
+    description:
+      "A sweeping 1,000-page report by more than 100 researchers concludes that California's fragmented school governance is holding students back — and Governor Newsom has endorsed its call for reform.",
+    date: "June 11, 2026",
+    dateISO: "2026-06-11",
+    readTime: "5 min",
+    category: "Policy & Legislation",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "A landmark research report released in May 2026 concludes that California's K-12 governance structure — one of the most decentralized in the nation — is a major obstacle to improving student outcomes. The report, produced by the Policy Analysis for California Education (PACE) initiative and spanning nearly 1,000 pages written by over 100 researchers, is part of the recurring \"Getting Down to Facts\" series that takes stock of the state's education system roughly every decade.",
+      },
+      {
+        type: "h2",
+        text: "What the Report Found",
+      },
+      {
+        type: "p",
+        text: "For over a century, California has divided school oversight among the governor, the Legislature, the elected State Superintendent of Public Instruction, and the State Board of Education — while giving local school districts wide latitude to set their own direction. The PACE report argues this arrangement has created accountability gaps that make it difficult to drive consistent improvement, especially for California's most underserved students.",
+      },
+      {
+        type: "ul",
+        items: [
+          "The shift to local control funding (through the Local Control Funding Formula) left big gaps in student performance with unclear lines of accountability.",
+          "Fragmented authority among state agencies means no single body is fully responsible when districts fall short.",
+          "The report recommends stronger state oversight mechanisms to ensure districts are meeting student needs — particularly for low-income students, English learners, and students with disabilities.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Newsom's Governance Reform Proposal",
+      },
+      {
+        type: "p",
+        text: "Governor Gavin Newsom has endorsed the report's core findings and, as part of his 2026-27 budget proposal, has put forward a plan to consolidate state education authority. His proposal would transfer most of the elected State Superintendent's administrative duties to the State Board of Education — whose members are appointed by the governor — effectively unifying the policymaking board with the department that carries out those policies.",
+      },
+      {
+        type: "p",
+        text: "The change would take effect January 1, 2027, after both Newsom and current Superintendent Tony Thurmond leave office. Supporters argue this would eliminate the friction that arises when elected superintendents and governors hold conflicting visions for education. Critics, including some educators and local school board members, worry the move concentrates too much control in the executive branch.",
+      },
+      {
+        type: "h2",
+        text: "Who Supports — and Who's Cautious",
+      },
+      {
+        type: "p",
+        text: "The reform has drawn support from a broad coalition including the Association of California School Administrators (ACSA), California Association of School Business Officials, Californians Together, and EdTrust-West. These organizations argue that clearer lines of authority will make it easier to implement statewide initiatives — such as the rollout of new math frameworks and expanded literacy programs — with fidelity across all districts.",
+      },
+      {
+        type: "p",
+        text: "However, the outgoing State Superintendent Tony Thurmond has publicly objected to the proposal, arguing that an independently elected superintendent provides a check on gubernatorial power and represents a direct democratic voice for California's public school communities. The debate will likely continue into the legislative session as the November 2026 election approaches.",
+      },
+      {
+        type: "h2",
+        text: "What This Means for Students and Families",
+      },
+      {
+        type: "p",
+        text: "For families, the immediate practical impact is limited — school doors don't change, teachers don't change, and curricula remain set at the district level for now. But the governance debate has real downstream consequences: how the state holds underperforming districts accountable, how education funding priorities are set, and how quickly California can respond when student outcomes stall.",
+      },
+      {
+        type: "p",
+        text: "For students who are already struggling academically — particularly in math and reading — the report's findings reinforce what many parents already experience firsthand: inconsistency in support services, variation in teacher quality across districts, and a system where a student's ZIP code can determine the quality of education they receive. Parents looking to supplement their child's schooling with a private tutor often cite exactly these gaps as the reason they seek outside help.",
+      },
+      {
+        type: "links",
+        label: "Find a Tutor in California",
+        items: [
+          { text: "Browse Math Tutors Near You", href: "/tutors" },
+          { text: "Post a Tuition Request — Free", href: "/request" },
+          { text: "Find Tutors in Los Angeles", href: "/los-angeles/mathematics" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "california-phone-free-school-act-july-2026",
     title: "California's Phone-Free School Act Takes Effect July 1 — What Every Family Needs to Know",
     description:
