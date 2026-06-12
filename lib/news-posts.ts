@@ -31,6 +31,85 @@ export type NewsPost = {
 
 export const NEWS_POSTS: NewsPost[] = [
   {
+    slug: "california-native-american-mascots-ban-july-2026",
+    title: "California's Ban on Native American School Mascots Takes Effect July 1",
+    description:
+      "AB 3074 expands California's Racial Mascots Act, prohibiting public K-12 schools from using any derogatory Native American term as a team name or mascot starting July 1, 2026. Dozens of schools are still in the process of rebranding.",
+    date: "June 12, 2026",
+    dateISO: "2026-06-12",
+    readTime: "4 min",
+    category: "Policy & Legislation",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "In less than three weeks, a new chapter of California's Racial Mascots Act takes effect. Starting July 1, 2026, public K-12 schools across the state are prohibited from using any derogatory Native American term as a team name, nickname, or mascot — a mandate that has prompted dozens of districts to rebrand athletic programs, update uniforms, and retire imagery tied to Indigenous peoples.",
+      },
+      {
+        type: "h2",
+        text: "What the Law Requires",
+      },
+      {
+        type: "p",
+        text: "Assembly Bill 3074, signed by Governor Gavin Newsom in 2024, expands the original 2021 law that banned the specific nickname 'Redskins.' The updated law covers a much wider set of terms explicitly listed in the statute — including Apaches, Braves, Chiefs, Chieftains, Chippewa, Comanches, Indians, Savages, Squaw, and Tribe — as well as any other term related to Native Americans that could be deemed derogatory. Schools found in violation face fines after a compliance period.",
+      },
+      {
+        type: "p",
+        text: "Two narrow exemptions remain. Public schools operated by an Indian tribe or tribal organization are exempt from the prohibition. Additionally, a school may seek an exemption by demonstrating a specific, documented connection to a tribe that has formally endorsed the use of the name.",
+      },
+      {
+        type: "h2",
+        text: "Which Schools Are Affected?",
+      },
+      {
+        type: "p",
+        text: "The California Department of Education has been tracking compliance since AB 3074 was signed. According to reporting by Action News Now and KRCR, a number of schools in rural Northern California — including several in the Sacramento Valley and Shasta County — carried Native American-themed mascots well into the 2025-26 school year and have been working toward rebrands ahead of the July deadline. Districts typically need to replace uniforms, signage, letterhead, and digital assets, a process that can cost tens of thousands of dollars.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Schools must retire prohibited team names, nicknames, and mascots by July 1, 2026.",
+          "Explicit violations — such as continuing to use a banned name in official school communications — can trigger state fines.",
+          "Tribal exemptions require formal, documented tribal endorsement — informal goodwill is not sufficient.",
+          "Spirit wear and merchandise purchased before the deadline does not automatically become illegal, but schools are advised to phase it out.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The Broader Context",
+      },
+      {
+        type: "p",
+        text: "California is one of the most active states in the nation on the mascot issue. The original Racial Mascots Act was among the first state-level bans in the U.S. when it passed in 2021. Advocates who pushed for AB 3074's expansion argued that the original law left too many loopholes — allowing schools to keep Native American imagery as long as they avoided the single word 'Redskins.' The expanded statute is designed to close those gaps.",
+      },
+      {
+        type: "p",
+        text: "Critics, mostly from rural districts with long mascot traditions, have raised concerns about the cost of rebranding and what they describe as a loss of community identity. Some school boards voted to fight the law before ultimately complying. A few districts have cited the tribal-endorsement exemption in attempts to retain their names, though tribes have not uniformly granted approval.",
+      },
+      {
+        type: "h2",
+        text: "What This Means for Students and Families",
+      },
+      {
+        type: "p",
+        text: "For most California students, the change will be visible in fall 2026 when new school-year uniforms and spirit materials reflect updated team names. Schools that complete rebrands before July 1 are fully compliant; those that do not will face state scrutiny when the new school year begins. Parents who are unsure whether their school is in compliance can contact their district's administrative office or check communications from the California Department of Education.",
+      },
+      {
+        type: "p",
+        text: "The law applies exclusively to public schools. Private schools are not subject to the Racial Mascots Act, though many have voluntarily adopted similar policies. Students at schools undergoing rebrands this summer may also benefit from additional academic support as districts redirect administrative resources toward compliance efforts — an area where private tutors can play a valuable role in keeping learning on track.",
+      },
+      {
+        type: "links",
+        label: "Find a Tutor in California",
+        items: [
+          { text: "Browse California Tutors", href: "/tutors" },
+          { text: "Post a Tutoring Request", href: "/request" },
+          { text: "Los Angeles History Tutors", href: "/los-angeles/history" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "newsom-revised-budget-california-schools-2026-27-prop98",
     title: "California Schools Eye Record Funding in Newsom's Revised Budget — But $3.9 Billion Is Still Withheld",
     description:
