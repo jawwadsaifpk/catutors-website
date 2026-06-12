@@ -31,6 +31,84 @@ export type NewsPost = {
 
 export const NEWS_POSTS: NewsPost[] = [
   {
+    slug: "california-mandatory-kindergarten-bill-2026",
+    title: "California Moves Closer to Making Kindergarten Mandatory",
+    description:
+      "Legislators are pushing a new bill to require kindergarten before first grade, with the State Superintendent's backing. California is one of only 18 states that still does not mandate kindergarten attendance.",
+    date: "June 12, 2026",
+    dateISO: "2026-06-12",
+    readTime: "5 min",
+    category: "Policy & Legislation",
+    region: "Statewide",
+    sections: [
+      {
+        type: "p",
+        text: "California may finally require kindergarten attendance. Lawmakers are advancing legislation that would make kindergarten a prerequisite before entering first grade, marking the latest push in a years-long effort to close an enrollment gap that leaves roughly one in nine eligible five-year-olds outside the classroom each year.",
+      },
+      {
+        type: "h2",
+        text: "What the Bill Would Do",
+      },
+      {
+        type: "p",
+        text: "The proposed legislation would require children to complete a year of kindergarten before enrolling in first grade, beginning in the 2026–27 school year. Importantly, it would not lower the age for compulsory education in California — currently set at six years old — and would apply only to children entering public school. Families who homeschool would retain existing rights under state law.",
+      },
+      {
+        type: "p",
+        text: "Senator Susan Rubio's SB bill making kindergarten mandatory has already passed the Senate Education Committee, signaling growing legislative support. State Superintendent of Public Instruction Tony Thurmond has pledged to back any measure that brings this requirement into law, calling it a legislative priority for 2026.",
+      },
+      {
+        type: "h2",
+        text: "Why This Matters",
+      },
+      {
+        type: "p",
+        text: "California is currently one of 18 states that does not mandate kindergarten attendance. According to the California Department of Education, approximately 11% of eligible children were not enrolled in kindergarten during the 2022–23 school year. Research consistently shows that children who skip kindergarten enter first grade with weaker foundational skills in literacy and numeracy, widening achievement gaps that become harder to close in later grades.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Kindergarten builds foundational skills in reading, math, and social development that directly affect later academic performance.",
+          "Children who miss kindergarten are more likely to struggle with grade-level reading by third grade — a key milestone for long-term outcomes.",
+          "Low-income and English learner students are disproportionately represented among those who do not attend kindergarten.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "A Long Road to This Point",
+      },
+      {
+        type: "p",
+        text: "This is not the first time California lawmakers have attempted this change. Two previous kindergarten bills both failed — one stalled in the Senate Appropriations Committee, and another was vetoed by Governor Newsom in a prior legislative cycle. In his veto message, Newsom expressed general support for early education but said the state had not budgeted for the estimated $268 million annual cost of expanding kindergarten access to serve all newly required students.",
+      },
+      {
+        type: "p",
+        text: "Supporters of the current bill, including the California Teachers Association and numerous school districts, argue that the state's improved fiscal position and the Governor's revised 2026–27 budget — which includes significant new Proposition 98 funding for K-12 schools — make this the right moment to act. Opponents, primarily homeschool advocacy groups, continue to raise concerns about parental rights rather than the educational merits of kindergarten itself.",
+      },
+      {
+        type: "h2",
+        text: "What Parents and Tutors Should Know",
+      },
+      {
+        type: "p",
+        text: "If the bill passes and takes effect for the 2026–27 school year, families with five-year-olds who had planned to skip kindergarten will need to enroll them in public school or document a qualifying homeschool arrangement. For tutors who work with early elementary students, demand for kindergarten readiness and first-grade preparation support is likely to grow as more children enter the formal school system.",
+      },
+      {
+        type: "p",
+        text: "Parents who want to give their child a strong start — whether or not they currently attend kindergarten — can work with a local tutor to build early reading and math foundations before the school year begins.",
+      },
+      {
+        type: "links",
+        label: "Find Early Education Support in California",
+        items: [
+          { text: "Find a tutor in Los Angeles", href: "/los-angeles/mathematics" },
+          { text: "Browse all California tutors", href: "/tutors" },
+          { text: "Post a tutoring request", href: "/request" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "california-native-american-mascots-ban-july-2026",
     title: "California's Ban on Native American School Mascots Takes Effect July 1",
     description:
