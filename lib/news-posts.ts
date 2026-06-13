@@ -31,6 +31,68 @@ export type NewsPost = {
 
 export const NEWS_POSTS: NewsPost[] = [
   {
+    slug: "lausd-layoffs-budget-deficit-2026-27",
+    title: "LAUSD Approves Mass Layoffs as District Faces $877 Million Budget Deficit",
+    description:
+      "Los Angeles Unified School District has authorized layoff notices for up to 3,200 employees and is planning school consolidations as it confronts one of the worst budget crises in its history.",
+    date: "June 13, 2026",
+    dateISO: "2026-06-13",
+    readTime: "5 min",
+    category: "District News",
+    region: "Los Angeles",
+    sections: [
+      {
+        type: "p",
+        text: "The Los Angeles Unified School District is facing a financial reckoning. The LAUSD Board of Education has voted to issue layoff notices to as many as 3,200 district employees as part of an emergency response to an $877 million budget deficit for the 2026-27 school year — a shortfall driven by years of declining enrollment and the expiration of federal pandemic relief funds.",
+      },
+      {
+        type: "h2",
+        text: "Who Is Affected",
+      },
+      {
+        type: "p",
+        text: "According to reporting by EdSource and LAist, the immediate round of cuts — approximately 657 confirmed positions — targets central and regional office staff rather than classroom teachers. However, the district has warned that deeper reductions are coming. A multi-year financial plan projects the deficit growing to $1.4 billion in 2027-28 and $3.6 billion by 2028-29, with an estimated 6,000 total job losses that would represent more than 10 percent of the district's workforce.",
+      },
+      {
+        type: "h2",
+        text: "School Consolidations on the Horizon",
+      },
+      {
+        type: "p",
+        text: "Beyond staffing reductions, LAUSD Superintendent Alberto Carvalho has signaled that school campus consolidations are planned for the 2027-28 school year. The district will also cut per-campus budgets, reduce transportation services, and eliminate unfilled positions. Schools that serve higher-needs student populations — including those supported by Title I funding — are expected to see their supplemental budgets trimmed.",
+      },
+      {
+        type: "h2",
+        text: "The Enrollment Decline Behind the Crisis",
+      },
+      {
+        type: "p",
+        text: "LAUSD's enrollment has fallen sharply over the past two decades, from a peak of roughly 746,000 students in 2002 to approximately 408,000 today. State funding is tied directly to average daily attendance, so fewer students means less revenue each year. At the same time, the district expanded programs and staff during the pandemic using one-time federal relief dollars — funding that has now run out, leaving a structural gap that cannot be closed without significant cuts.",
+      },
+      {
+        type: "h2",
+        text: "What Parents and Students Should Know",
+      },
+      {
+        type: "p",
+        text: "For the 2026-27 school year, classroom instruction is not expected to be directly reduced. However, families may notice changes to support staff availability, enrichment programs, and transportation routes. Community meetings are expected over the summer as the district refines its consolidation plans.",
+      },
+      {
+        type: "p",
+        text: "For students who rely on school-based academic support services that may be reduced, private tutoring can be an effective supplement. Many tutors in the Los Angeles area specialize in helping K-12 students stay on track during periods of school disruption.",
+      },
+      {
+        type: "links",
+        label: "Find a Tutor in Los Angeles",
+        items: [
+          { text: "Browse Los Angeles Tutors", href: "/los-angeles" },
+          { text: "Find a Math Tutor in LA", href: "/los-angeles/mathematics" },
+          { text: "Post a Tutoring Request", href: "/request" },
+        ],
+      },
+    ],
+  },
+  {
     slug: "california-mandatory-kindergarten-bill-2026",
     title: "California Moves Closer to Making Kindergarten Mandatory",
     description:
