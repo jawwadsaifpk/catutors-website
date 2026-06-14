@@ -49,6 +49,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta name="facebook-domain-verification" content="axq9rtfc3ojmiqjpavspznhoupint7" />
         <meta property="og:see_also" content="https://www.facebook.com/californiatutors" />
         <script
           type="application/ld+json"
