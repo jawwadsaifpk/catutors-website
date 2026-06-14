@@ -74,34 +74,114 @@ export default async function RegisterPage({ searchParams }: RegisterPageProps) 
       <div className="bg-gray-50 py-12 px-4">
         <div className="max-w-2xl mx-auto flex flex-col gap-6">
 
-          {/* FAQ */}
+          {/* How it works */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:p-8">
-            <h2 className="text-base font-bold text-gray-900 mb-4">Before you apply</h2>
-            <dl className="flex flex-col gap-5">
+            <p className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-6 text-center">How it works</p>
+            <div className="flex items-start justify-between gap-2">
               {[
                 {
-                  q: "Are tutors employees or independent contractors?",
-                  a: "Tutors on catutors.com are independent contractors. You set your own schedule, rates, and decide which students to work with. catutors.com is a free directory — not your employer.",
+                  n: "1",
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                      <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/>
+                    </svg>
+                  ),
+                  label: "Fill the form",
+                  sub: "Takes about 3 minutes",
                 },
                 {
-                  q: "Are benefits provided?",
-                  a: "No. Because tutors are independent contractors, no employment benefits are offered. You are responsible for your own insurance and taxes.",
+                  n: "2",
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                      <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                  ),
+                  label: "We review",
+                  sub: "Within 24 hours",
                 },
                 {
-                  q: "What qualifications do I need?",
-                  a: "There are no mandatory degree requirements. Relevant experience and strong subject knowledge matter most. You describe your background in your bio — students read it before reaching out.",
+                  n: "3",
+                  icon: (
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.77 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.68 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  ),
+                  label: "Students call you",
+                  sub: "Direct — no middleman",
                 },
-                {
-                  q: "How does approval work?",
-                  a: "Submit below. Applications are reviewed within 24 hours. Once approved, your profile goes live and students can contact you directly.",
-                },
-              ].map(({ q, a }) => (
-                <div key={q} className="border-b border-gray-100 last:border-0 pb-5 last:pb-0">
-                  <dt className="text-sm font-bold text-gray-900 mb-1">{q}</dt>
-                  <dd className="text-sm text-gray-600 leading-relaxed">{a}</dd>
+              ].map((step, i, arr) => (
+                <div key={step.n} className="flex items-start flex-1">
+                  <div className="flex flex-col items-center flex-1">
+                    <div className="w-12 h-12 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center mb-3">
+                      {step.icon}
+                    </div>
+                    <p className="text-sm font-bold text-gray-900 text-center">{step.label}</p>
+                    <p className="text-xs text-gray-400 text-center mt-0.5">{step.sub}</p>
+                  </div>
+                  {i < arr.length - 1 && (
+                    <div className="flex-shrink-0 mt-5 mx-1">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-gray-300">
+                        <polyline points="9 18 15 12 9 6"/>
+                      </svg>
+                    </div>
+                  )}
                 </div>
               ))}
-            </dl>
+            </div>
+          </div>
+
+          {/* Benefit cards */}
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              {
+                color: "bg-violet-50 text-violet-600",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                    <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+                  </svg>
+                ),
+                title: "Independent work",
+                desc: "Set your own rates & schedule",
+              },
+              {
+                color: "bg-green-50 text-green-600",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                    <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  </svg>
+                ),
+                title: "Always free",
+                desc: "No fees or commissions, ever",
+              },
+              {
+                color: "bg-amber-50 text-amber-600",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                  </svg>
+                ),
+                title: "No degree needed",
+                desc: "Experience matters most",
+              },
+              {
+                color: "bg-blue-50 text-blue-600",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                ),
+                title: "Real students",
+                desc: "California families looking now",
+              },
+            ].map((card) => (
+              <div key={card.title} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 flex flex-col gap-2">
+                <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${card.color}`}>
+                  {card.icon}
+                </div>
+                <p className="text-sm font-bold text-gray-900">{card.title}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{card.desc}</p>
+              </div>
+            ))}
           </div>
 
           {/* Multi-step form */}
