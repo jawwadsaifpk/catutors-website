@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { db } from "@/lib/db";
 import TutorCard from "@/components/TutorCard";
 import SearchBar from "@/components/SearchBar";
@@ -118,39 +119,84 @@ export default async function HomePage({ searchParams }: HomePageProps) {
         <div className="pointer-events-none absolute bottom-0 -left-16 w-72 h-72 bg-blue-400 opacity-15 rounded-full blur-3xl" />
         <div className="pointer-events-none absolute top-1/2 right-1/4 w-48 h-48 bg-amber-400 opacity-10 rounded-full blur-2xl" />
 
-        <div className="relative max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium text-blue-200 mb-6">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-            Verified tutors across California — 100% free
-          </div>
+        <div className="relative max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr_260px] items-center gap-4">
 
-          <h1 className="text-4xl sm:text-6xl font-extrabold mb-4 tracking-tight leading-tight text-balance">
-            Find the Right Tutor in California —{" "}
-            <span className="text-amber-400">Within 24 Hours</span>
-          </h1>
+            {/* Left photo collage */}
+            <div className="hidden lg:block relative h-[400px]">
+              {/* Large diamond — top */}
+              <div className="absolute top-6 left-4 w-36 h-36 overflow-hidden rotate-45 rounded-2xl shadow-2xl ring-2 ring-white/20">
+                <Image src="/tutors/tutor-1.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+              </div>
+              <div className="absolute top-0 right-10 w-7 h-7 bg-amber-400 rotate-45 rounded shadow-lg" />
+              {/* Medium diamond — middle */}
+              <div className="absolute top-[155px] left-[90px] w-[108px] h-[108px] overflow-hidden rotate-45 rounded-xl shadow-2xl ring-2 ring-white/20">
+                <Image src="/tutors/tutor-2.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+              </div>
+              <div className="absolute top-[148px] left-2 w-4 h-4 bg-green-400 rotate-45 rounded-sm" />
+              {/* Small diamond — bottom */}
+              <div className="absolute bottom-14 left-8 w-24 h-24 overflow-hidden rotate-45 rounded-xl shadow-xl ring-2 ring-white/20">
+                <Image src="/tutors/tutor-3.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+              </div>
+              <div className="absolute bottom-8 right-6 w-5 h-5 bg-blue-400 rotate-45 rounded-sm opacity-80" />
+            </div>
 
-          <Suspense fallback={<div className="h-16 animate-pulse rounded-2xl bg-white/10" />}>
-            <SearchBar />
-          </Suspense>
+            {/* Center content */}
+            <div className="text-center">
+              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium text-blue-200 mb-6">
+                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                Verified tutors across California — 100% free
+              </div>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <Link href="/request" className="px-7 py-3.5 bg-amber-500 text-white font-bold rounded-xl hover:bg-amber-400 transition-all shadow-lg hover:shadow-amber-500/30 hover:shadow-xl">
-              Post Your Request — Free →
-            </Link>
-            <Link href="/tutors" className="px-7 py-3.5 bg-white/10 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-colors backdrop-blur-sm">
-              Browse All Tutors
-            </Link>
-          </div>
+              <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight leading-tight text-balance">
+                Find the Right Tutor in California —{" "}
+                <span className="text-amber-400">Within 24 Hours</span>
+              </h1>
 
-          {/* Subject chips */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
-            <span className="text-blue-300 text-xs font-semibold uppercase tracking-wide mr-1">Popular:</span>
-            {["Mathematics", "SAT Prep", "Physics", "Chemistry", "English", "Calculus", "Spanish", "Computer Science"].map((s) => (
-              <Link key={s} href={`/?q=${encodeURIComponent(s)}`}
-                className="px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white text-xs font-medium hover:bg-white/25 transition-colors">
-                {s}
-              </Link>
-            ))}
+              <Suspense fallback={<div className="h-16 animate-pulse rounded-2xl bg-white/10" />}>
+                <SearchBar />
+              </Suspense>
+
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+                <Link href="/request" className="px-7 py-3.5 bg-amber-500 text-white font-bold rounded-xl hover:bg-amber-400 transition-all shadow-lg hover:shadow-amber-500/30 hover:shadow-xl">
+                  Post Your Request — Free →
+                </Link>
+                <Link href="/tutors" className="px-7 py-3.5 bg-white/10 border border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-colors backdrop-blur-sm">
+                  Browse All Tutors
+                </Link>
+              </div>
+
+              {/* Subject chips */}
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
+                <span className="text-blue-300 text-xs font-semibold uppercase tracking-wide mr-1">Popular:</span>
+                {["Mathematics", "SAT Prep", "Physics", "Chemistry", "English", "Calculus", "Spanish", "Computer Science"].map((s) => (
+                  <Link key={s} href={`/?q=${encodeURIComponent(s)}`}
+                    className="px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white text-xs font-medium hover:bg-white/25 transition-colors">
+                    {s}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Right photo collage */}
+            <div className="hidden lg:block relative h-[400px]">
+              {/* Large diamond — top */}
+              <div className="absolute top-6 right-4 w-36 h-36 overflow-hidden rotate-45 rounded-2xl shadow-2xl ring-2 ring-white/20">
+                <Image src="/tutors/tutor-4.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+              </div>
+              <div className="absolute top-0 left-10 w-7 h-7 bg-green-400 rotate-45 rounded shadow-lg" />
+              {/* Medium diamond — middle */}
+              <div className="absolute top-[155px] right-[90px] w-[108px] h-[108px] overflow-hidden rotate-45 rounded-xl shadow-2xl ring-2 ring-white/20">
+                <Image src="/tutors/tutor-5.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+              </div>
+              <div className="absolute top-[148px] right-2 w-4 h-4 bg-amber-400 rotate-45 rounded-sm" />
+              {/* Small diamond — bottom */}
+              <div className="absolute bottom-14 right-8 w-24 h-24 overflow-hidden rotate-45 rounded-xl shadow-xl ring-2 ring-white/20">
+                <Image src="/tutors/tutor-6.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+              </div>
+              <div className="absolute bottom-8 left-6 w-5 h-5 bg-indigo-400 rotate-45 rounded-sm opacity-80" />
+            </div>
+
           </div>
         </div>
       </div>
