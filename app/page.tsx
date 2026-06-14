@@ -141,6 +141,33 @@ export default async function HomePage({ searchParams }: HomePageProps) {
               Browse All Tutors
             </Link>
           </div>
+
+          {/* Subject chips */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-2">
+            <span className="text-blue-300 text-xs font-semibold uppercase tracking-wide mr-1">Popular:</span>
+            {["Mathematics", "SAT Prep", "Physics", "Chemistry", "English", "Calculus", "Spanish", "Computer Science"].map((s) => (
+              <Link key={s} href={`/?q=${encodeURIComponent(s)}`}
+                className="px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white text-xs font-medium hover:bg-white/25 transition-colors">
+                {s}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Trust strip */}
+      <div className="bg-white border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
+          {[
+            { n: "20", label: "California cities" },
+            { n: "100%", label: "Manually verified tutors" },
+            { n: "Free", label: "For students & tutors, always" },
+          ].map(({ n, label }) => (
+            <div key={label} className="flex items-center gap-2">
+              <span className="text-xl font-extrabold text-blue-600">{n}</span>
+              <span className="text-sm text-gray-500">{label}</span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -228,7 +255,11 @@ export default async function HomePage({ searchParams }: HomePageProps) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
           <div className="relative bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 text-white overflow-hidden shadow-lg">
-            <div className="pointer-events-none absolute -right-6 -top-6 text-9xl opacity-10 select-none">👨‍🎓</div>
+            <svg className="pointer-events-none absolute -right-4 -top-4 w-40 h-40 opacity-10" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {Array.from({ length: 5 }).map((_, r) => Array.from({ length: 5 }).map((_, c) => (
+                <circle key={`${r}-${c}`} cx={16 + c * 32} cy={16 + r * 32} r="6" fill="white" />
+              )))}
+            </svg>
             <h3 className="text-xl font-bold mb-5">For Students &amp; Parents</h3>
             <ul className="flex flex-col gap-3 text-sm text-blue-100">
               {[
@@ -250,7 +281,11 @@ export default async function HomePage({ searchParams }: HomePageProps) {
           </div>
 
           <div className="relative bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-8 text-white overflow-hidden shadow-lg">
-            <div className="pointer-events-none absolute -right-6 -top-6 text-9xl opacity-10 select-none">📚</div>
+            <svg className="pointer-events-none absolute -right-4 -top-4 w-40 h-40 opacity-10" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <line key={i} x1={0} y1={i * 32} x2={160} y2={i * 32 + 160} stroke="white" strokeWidth="12" strokeLinecap="round" />
+              ))}
+            </svg>
             <h3 className="text-xl font-bold mb-5">For Tutors</h3>
             <ul className="flex flex-col gap-3 text-sm text-orange-100">
               {[
