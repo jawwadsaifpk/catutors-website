@@ -126,17 +126,17 @@ export default async function HomePage({ searchParams }: HomePageProps) {
             <div className="hidden lg:block relative h-[400px]">
               {/* Large diamond — top */}
               <div className="absolute top-6 left-4 w-36 h-36 overflow-hidden rotate-45 rounded-2xl shadow-2xl ring-2 ring-white/20">
-                <Image src="/tutors/tutor-1.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+                <Image src="/tutors/tutor-1.webp" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
               </div>
               <div className="absolute top-0 right-10 w-7 h-7 bg-amber-400 rotate-45 rounded shadow-lg" />
               {/* Medium diamond — middle */}
               <div className="absolute top-[155px] left-[90px] w-[108px] h-[108px] overflow-hidden rotate-45 rounded-xl shadow-2xl ring-2 ring-white/20">
-                <Image src="/tutors/tutor-2.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+                <Image src="/tutors/tutor-2.webp" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
               </div>
               <div className="absolute top-[148px] left-2 w-4 h-4 bg-green-400 rotate-45 rounded-sm" />
               {/* Small diamond — bottom */}
               <div className="absolute bottom-14 left-8 w-24 h-24 overflow-hidden rotate-45 rounded-xl shadow-xl ring-2 ring-white/20">
-                <Image src="/tutors/tutor-3.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+                <Image src="/tutors/tutor-3.webp" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
               </div>
               <div className="absolute bottom-8 right-6 w-5 h-5 bg-blue-400 rotate-45 rounded-sm opacity-80" />
             </div>
@@ -182,17 +182,17 @@ export default async function HomePage({ searchParams }: HomePageProps) {
             <div className="hidden lg:block relative h-[400px]">
               {/* Large diamond — top */}
               <div className="absolute top-6 right-4 w-36 h-36 overflow-hidden rotate-45 rounded-2xl shadow-2xl ring-2 ring-white/20">
-                <Image src="/tutors/tutor-4.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+                <Image src="/tutors/tutor-4.webp" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
               </div>
               <div className="absolute top-0 left-10 w-7 h-7 bg-green-400 rotate-45 rounded shadow-lg" />
               {/* Medium diamond — middle */}
               <div className="absolute top-[155px] right-[90px] w-[108px] h-[108px] overflow-hidden rotate-45 rounded-xl shadow-2xl ring-2 ring-white/20">
-                <Image src="/tutors/tutor-5.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+                <Image src="/tutors/tutor-5.webp" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
               </div>
               <div className="absolute top-[148px] right-2 w-4 h-4 bg-amber-400 rotate-45 rounded-sm" />
               {/* Small diamond — bottom */}
               <div className="absolute bottom-14 right-8 w-24 h-24 overflow-hidden rotate-45 rounded-xl shadow-xl ring-2 ring-white/20">
-                <Image src="/tutors/tutor-6.png" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
+                <Image src="/tutors/tutor-6.webp" alt="California tutor" fill className="object-cover -rotate-45 scale-[1.5]" />
               </div>
               <div className="absolute bottom-8 left-6 w-5 h-5 bg-indigo-400 rotate-45 rounded-sm opacity-80" />
             </div>
