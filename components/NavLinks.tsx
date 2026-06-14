@@ -22,6 +22,9 @@ export default async function NavLinks() {
         <Link href={hasTutor ? "/tutor/dashboard" : "/tutor/login"} className="text-gray-600 hover:text-blue-600 hover:underline underline-offset-4 transition-colors font-medium">
           {hasTutor ? "Dashboard" : "Tutor Login"}
         </Link>
+        <Link href="/register" className="px-3 py-2 border border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors">
+          Become a Tutor
+        </Link>
         <Link href="/request" className="px-3 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
           Find a Tutor
         </Link>

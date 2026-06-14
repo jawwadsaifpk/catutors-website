@@ -30,7 +30,10 @@ export default function MobileMenu({ hasTutor }: { hasTutor: boolean }) {
           <Link href={hasTutor ? "/tutor/dashboard" : "/tutor/login"} onClick={close} className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
             {hasTutor ? "Tutor Dashboard" : "Tutor Login"}
           </Link>
-          <Link href="/request" onClick={close} className="mt-1 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors text-center">
+          <Link href="/register" onClick={close} className="mt-1 px-4 py-2 border border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors text-center">
+            Become a Tutor
+          </Link>
+          <Link href="/request" onClick={close} className="px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors text-center">
             Find a Tutor
           </Link>
         </div>
