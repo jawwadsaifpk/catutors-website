@@ -49,6 +49,19 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <meta property="og:see_also" content="https://www.facebook.com/californiatutors" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "catutors.com",
+              "url": "https://www.catutors.com",
+              "sameAs": ["https://www.facebook.com/californiatutors"],
+            }),
+          }}
+        />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YKK4JH3Y5T"></script>
         <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];
